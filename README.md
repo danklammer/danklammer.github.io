@@ -1,2 +1,2 @@
-# danklammer.com
-Personal Homepage
+# DK
+My personal site/portfolio
