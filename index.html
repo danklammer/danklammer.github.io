@@ -10,7 +10,7 @@
 
        <style>
 
-            .base-font{
+            .font-family {
                 font-family: Menlo, Consolas, Monaco, monospace;
             }
 
@@ -24,6 +24,10 @@
             .bg-gray { background: #3f414e }
             .bg-blue { background: #3498db }
 
+            .nav--on {
+                position: relative;
+                background: #3498db url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="20" height="10"><path fill="#fff" d="M0 10 L20 10 10 0Z" /></svg>') no-repeat center bottom;
+            }
 
             /* Media Queries */
 
@@ -42,34 +46,44 @@
                     padding: 1rem;
                 }
 
+                .nav--on {
+                    background: #3498db url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="20"><path fill="#fff" d="M10 0 L10 20 0 10Z" /></svg>') no-repeat right center;
+                }
+
 
             }
 
 
         </style>
 
+<!--         <svg version="1.1" viewBox="0 0 5 10" width="5" height="10"><path fill="#fff" d="M5 0 L0 5 5 10 Z" /></svg>
+ -->
     </head>
-    <body class="base-font align-center color-gray line-height-default">
+    <body class="font-family align-center color-gray line-height-default">
 
     <nav class="lg-nav align-middle bg-slate">
-        <ul class="list-reset line-height-none">
-            <li class="inline-block-top p2"><a href="#me" class="color-white">
-                <svg version="1.1" viewBox="0 0 32 32" width="48" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+        <ul class="list-reset line-height-none width-full">
+            <li class="lg-width-100 sm-width-25 inline-block-top"><a href="#me" class="nav--on block p3 color-white" title="About">
+                <svg version="1.1" viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+                    <title>About</title>
                     <path d="M10 9 L10 24 C10 28 13 30 16 30 19 30 22 28 22 24 L22 6 C22 3 20 2 18 2 16 2 14 3 14 6 L14 23 C14 24 15 25 16 25 17 25 18 24 18 23 L18 9"></path>
                 </svg>
-            </a></li>
-            <li class="inline-block-top p2"><a href="#works" class="color-white">
-                <svg version="1.1" viewBox="0 0 32 32" width="48" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+            </a></li><!--
+            --><li class="lg-width-100 sm-width-25 inline-block-top"><a href="#works" class="block p3 color-white" title="Works">
+                <svg version="1.1" viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+                    <title>Work</title>
                     <path d="M29 17 L29 28 3 28 3 17 M2 8 L30 8 30 16 C30 16 24 20 16 20 8 20 2 16 2 16 L2 8 Z M16 22 L16 18 M20 8 C20 8 20 4 16 4 12 4 12 8 12 8"></path>
                 </svg>
-            </a></li>
-            <li class="inline-block-top p2"><a href="#writings" class="color-white">
-                <svg version="1.1" viewBox="0 0 32 32" width="48" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+            </a></li><!--
+            --><li class="lg-width-100 sm-width-25 inline-block-top"><a href="#writings" class="block p3 color-white" title="Ideas">
+                <svg version="1.1" viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+                    <title>Ideas</title>
                     <path d="M2 4 L30 4 30 22 16 22 8 29 8 22 2 22 Z"></path>
                 </svg>
-            </a></li>
-            <li class="inline-block-top p2"><a href="#contact" class="color-white">
-                <svg version="1.1" viewBox="0 0 32 32" width="48" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+            </a></li><!--
+            --><li class="lg-width-100 sm-width-25 inline-block-top"><a href="#contact" class="block p3 color-white" title="Contact">
+                <svg version="1.1" viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true">
+                    <title>Contact</title>
                     <path d="M2 26 L30 26 30 6 2 6 Z M2 6 L16 16 30 6"></path>
                 </svg>
             </a></li>
@@ -79,7 +93,7 @@
 
     <div class="lg-page height-full">
 
-        <article class="height-full align-middle p1">
+        <article class="height-full align-middle p3">
             <section class="center-block" style="max-width: 32rem">
 
                 <svg version="1.1" viewBox="0 0 32 32" width="4rem" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true" class="color-blue">
@@ -96,7 +110,7 @@
             </section>
         </article>
 
-        <article class="height-full align-middle p1">
+        <article class="height-full align-middle p3">
             <section class="center-block" style="max-width: 32rem">
 
                 <svg version="1.1" viewBox="0 0 32 32" width="4rem" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true" class="color-blue">
@@ -113,7 +127,7 @@
             </section>
         </article>
 
-        <article class="height-full align-middle p1">
+        <article class="height-full align-middle p3">
             <section class="center-block" style="max-width: 32rem">
 
                 <svg version="1.1" viewBox="0 0 32 32" width="4rem" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4%" aria-hidden="true" class="color-blue">
