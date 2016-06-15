@@ -1,0 +1,37 @@
+.font-menlo {
+    font-family: Menlo, Consolas, Monaco, monospace;
+}
+
+.color-white { color: #fff }
+.color-slate { color: #282b31 }
+.color-gray { color: #3f414e }
+.color-blue { color: #3498db }
+
+.bg-white { background: #fff }
+.bg-slate { background: #282b31 }
+.bg-gray { background: #3f414e }
+.bg-blue { background: #3498db }
+
+.current {
+	background: #3498db;
+}
+
+
+/* Media Queries */
+
+@media (min-width: 60rem) {
+
+    .lg-nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 25rem;
+        height: 100vh;
+    }
+
+    .lg-page {
+        margin-left: 25rem;
+        padding: 1rem;
+    }
+
+}
