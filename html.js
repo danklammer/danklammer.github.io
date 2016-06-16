@@ -28,7 +28,7 @@ module.exports = React.createClass({
               </title>
               { css }
             </head>
-            <body className="font-menlo color-gray line-height-default">
+            <body className="font-avenir color-gray line-height-default">
               <div id="react-mount" dangerouslySetInnerHTML={ {    __html: this.props.body} } />
               <script src={ prefixLink(`/bundle.js?t=${BUILD_TIME}`) } />
             </body>

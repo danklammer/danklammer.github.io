@@ -1,6 +1,5 @@
-.font-menlo {
-    font-family: Menlo, Consolas, Monaco, monospace;
-}
+.font-menlo { font-family: Menlo, Consolas, Monaco, monospace }
+.font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
 
 .color-white { color: #fff }
 .color-slate { color: #282b31 }
