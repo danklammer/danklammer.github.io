@@ -18,9 +18,9 @@ class SiteSidebar extends React.Component {
             </svg>
           </Link>
           { isHome ? (
-            <h1 className='font-size-2 font-weight-4 line-height-title lowercase'><Link style={ {  textDecoration: 'none', borderBottom: 'none', color: 'inherit'  } } to={ prefixLink('/') }> { config.siteAuthor } </Link></h1>
+            <h1 className='font-size-1 font-weight-4 line-height-title lowercase'><Link style={ {  textDecoration: 'none', borderBottom: 'none', color: 'inherit'  } } to={ prefixLink('/') }> { config.siteAuthor } </Link></h1>
             ) :
-            <h2 className='font-size-2 font-weight-4 line-height-title lowercase'><Link style={ {  textDecoration: 'none', borderBottom: 'none', color: 'inherit'  } } to={ prefixLink('/') }> { config.siteAuthor } </Link></h2> }
+            <h2 className='font-size-1 font-weight-4 line-height-title lowercase'><Link style={ {  textDecoration: 'none', borderBottom: 'none', color: 'inherit'  } } to={ prefixLink('/') }> { config.siteAuthor } </Link></h2> }
           
             <h4 className='font-size-7 uppercase tracking-super opacity-5'>Designer &amp; Developer</h4>
 
