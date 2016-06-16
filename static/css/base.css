@@ -42,4 +42,8 @@
         background: linear-gradient(to bottom, rgba(255,255,255,0.96) 60%,rgba(255,255,255,0) 100%);
     }
 
+    .lg-article {
+        padding: 7rem 0 5rem;
+    }
+
 }
