@@ -7,24 +7,27 @@ class SiteNav extends React.Component {
     render() {
         const {location} = this.props
         return (
-            <nav className='align-center'>
-              <ul className='list-reset width-full'>
-                <li className='inline-block p2'>
-                  <Link to="/" className={ location.pathname === prefixLink('/') ? "current color-white underline-none p2 br2" : "dim-bg-black color-gray underline-none p2 br2 clickable" }>
-                    Articles
-                  </Link>
-                </li>
-                <li className='inline-block p2'>
-                  <Link to="/about" className={ location.pathname === prefixLink('/about') ? "current color-white underline-none p2 br2" : "dim-bg-black color-gray underline-none p2 br2 clickable" }>
-                    About
-                  </Link>
-                </li>
-                <li className='inline-block p2'>
-                  <Link to="/contact" className={ location.pathname === prefixLink('/contact') ? "current color-white underline-none p2 br2" : "dim-bg-black color-gray underline-none p2 br2 clickable" }>
-                    Contact
-                  </Link>
-                </li>
-              </ul>
+            <nav className='nav lg-nav width-full align-center py4'>
+              <Link to="/" className={ location.pathname === prefixLink('/')
+               ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
+               : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" } style={ { borderRadius: '.25rem 0 0 .25rem' } }>
+                Articles
+              </Link>
+              <Link to="/work" className={ location.pathname === prefixLink('/work')
+               ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
+               : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" }>
+                Work
+              </Link>
+              <Link to="/about" className={ location.pathname === prefixLink('/about')
+               ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
+               : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" }>
+                About
+              </Link>
+              <Link to="/contact" className={ location.pathname === prefixLink('/contact')
+               ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
+               : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" } style={ { borderRadius: '0 .25rem .25rem 0' } }>
+                Contact
+              </Link>
             </nav>
             );
     }

@@ -44,10 +44,10 @@ class SiteIndex extends React.Component {
             <DocumentTitle title={ config.siteTitle }>
               <div>
                 <SiteSidebar {...this.props}/>
-                <div className='lg-page height-full'>
+                <div className='lg-page lg-height-full'>
                   <SiteNav {...this.props}/>
-                  <article className='height-full align-middle p3'>
-                    <section className='center-block' style={ {  maxWidth: '34rem'  } }>
+                  <article className='lg-height-full lg-align-middle p3'>
+                    <section className='center-block' style={ {  maxWidth: '32rem'  } }>
                       { pageLinks }
                     </section>
                   </article>

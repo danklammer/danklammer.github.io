@@ -1,26 +1,27 @@
+
+/* Custom Properties */
+
 .font-menlo { font-family: Menlo, Consolas, Monaco, monospace }
 .font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
 
 .color-white { color: #fff }
-.color-slate { color: #282b31 }
 .color-gray { color: #3f414e }
+.color-slate { color: #282b31 }
 .color-blue { color: #3498db }
 
 .bg-white { background: #fff }
-.bg-slate { background: #282b31 }
 .bg-gray { background: #3f414e }
+.bg-slate { background: #282b31 }
 .bg-blue { background: #3498db }
 
-.current {
-	background: #3498db;
-}
+.lg-header { background-image: linear-gradient(to bottom, #282B31 0%, #383B43 100%) }
 
 
-/* Media Queries */
+/* Custom Media Queries */
 
 @media (min-width: 60rem) {
 
-    .lg-nav {
+    .lg-header {
         position: fixed;
         top: 0;
         left: 0;
@@ -30,7 +31,15 @@
 
     .lg-page {
         margin-left: 35%;
-        padding: 1rem;
+    }
+
+    .lg-nav {
+        width: 65%;
+        position: fixed;
+        top: 0;
+        right: 0;
+        height: 7rem;
+        background: linear-gradient(to bottom, rgba(255,255,255,0.96) 60%,rgba(255,255,255,0) 100%);
     }
 
 }

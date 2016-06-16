@@ -24,14 +24,14 @@ class SiteSidebar extends React.Component {
           
             <h4 className='font-size-7 uppercase tracking-super opacity-5'>Designer &amp; Developer</h4>
 
-            <p className='font-size-4 font-weight-3 my4' style={ { maxWidth: '18rem' } }>
+            <p className='font-size-4 font-weight-3 my4 center-block' style={ { maxWidth: '18rem' } }>
               Passionate about creating<br class="sm-hide" /> digital products&mdash;obsessed with simplicity &amp; performance.
             </p>
         </header>
         )
 
         return (
-            <div className='lg-nav align-middle align-center bg-slate color-white pt5 pb4'>
+            <div className='lg-header lg-align-middle align-center bg-slate color-white pt5 pb4'>
               { header }
             </div>
             );
