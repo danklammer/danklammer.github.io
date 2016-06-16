@@ -24,12 +24,12 @@
         position: fixed;
         top: 0;
         left: 0;
-        width: 25rem;
+        width: 35%;
         height: 100vh;
     }
 
     .lg-page {
-        margin-left: 25rem;
+        margin-left: 35%;
         padding: 1rem;
     }
 
