@@ -3,3 +3,5 @@ siteDescr = "Passionate about creating digital products–obsessed with simplici
 siteAuthor = "Dan Klammer"
 
 linkPrefix = "/"
+
+# noProductionJavascript = "true"
