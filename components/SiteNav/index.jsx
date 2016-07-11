@@ -13,17 +13,17 @@ class SiteNav extends React.Component {
                : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" } style={ { borderRadius: '.25rem 0 0 .25rem' } }>
                 Articles
               </Link>
-              <Link to="/work" className={ location.pathname === prefixLink('/work')
+              <Link to="/work" className={ location.pathname === prefixLink('/work') || location.pathname === prefixLink('/work/')
                ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
                : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" }>
                 Work
               </Link>
-              <Link to="/about" className={ location.pathname === prefixLink('/about')
+              <Link to="/about" className={ location.pathname === prefixLink('/about') || location.pathname === prefixLink('/about/')
                ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
                : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" }>
                 About
               </Link>
-              <Link to="/contact" className={ location.pathname === prefixLink('/contact')
+              <Link to="/contact" className={ location.pathname === prefixLink('/contact') || location.pathname === prefixLink('/contact/')
                ? "font-size-5 underline-none lowercase px3 py2 color-white bg-blue"
                : "font-size-5 underline-none lowercase px3 py2 color-gray dim-bg-black" } style={ { borderRadius: '0 .25rem .25rem 0' } }>
                 Contact
