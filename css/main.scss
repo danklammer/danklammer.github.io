@@ -1,0 +1,116 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@charset "utf-8";
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "tinyset",
+    "syntax-highlighting"
+;
+
+
+// Font Family
+.font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
+.font-menlo, code { font-family: Menlo, Consolas, Monaco, monospace }
+
+
+// Colors
+.color-white { color: #fff }
+.color-gray { color: #3f414e }
+.color-slate { color: #282b31 }
+.color-blue { color: #3498db }
+
+.bg-white { background: #fff }
+.bg-gray { background: #3f414e }
+.bg-slate { background: #282b31 }
+.bg-blue { background: #3498db }
+
+
+// Navigation
+.navlink-off, .navlink-on { position: relative }
+.navlink-off:after, .navlink-on:after {
+    content: " ";
+    display: block;
+    margin: .125rem auto 0;
+    width: 0;
+    height: .125rem;
+    border-radius: .125rem;
+    background: rgba(255,255,255,0);
+    pointer-events: none;
+    transition: all .4s ease;
+ }
+
+.navlink-on:after { width: 100%; background: #3498db }
+
+
+// Custom Properties
+p a { color: #3498db }
+
+.icon svg { width: 16px }
+
+.highlight {
+    font-size: .75rem;
+    margin: 0;
+    padding: .125rem 1.25rem;
+    border-radius: .25rem;
+    border-left: .25rem solid #3498db;
+}
+
+.highlighter-rouge {
+    font-size: .75rem;
+    padding: 0.25rem;
+    border-radius: .1875rem;
+}
+
+
+
+// Custom Media Queries
+
+@media (min-width: 60rem) {
+
+    .navlink-off:hover:after { width: 100%; background: #3498db }
+
+    .lg-header {
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 35%;
+        height: 100vh;
+    }
+
+    .lg-page {
+        margin-left: 35%;
+    }
+
+    .lg-page .lg-nav {
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        width: 35%;
+    }
+
+    .lg-article {
+        padding: 7rem 0 5rem;
+    }
+
+    .lg-footer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 6rem;
+        height: 100vh;
+    }
+
+    .lg-footer a { display: block }
+
+
+    .lg-post {
+        margin-left: 6rem;
+    }
+
+
+}

@@ -1,0 +1,21 @@
+---
+layout: default
+---
+<div class="lg-page lg-height-full">
+
+  {% include nav.html %}
+
+  <article class="lg-article lg-height-full lg-align-middle p3">
+    <section class="center-block" style="max-width: 34rem" >
+
+    <h1 class="font-size-2">{{ page.title }}</h1>
+    <div class="post-content">
+        {{ content }}
+    </div>
+
+    </section>
+  </article>
+
+  {% include header.html %}
+
+</div>

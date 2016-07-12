@@ -1,2 +1,2 @@
 # dankammer.github.io
-My personal site. Built with gatsbyjs
+My personal site. Built with jekyll

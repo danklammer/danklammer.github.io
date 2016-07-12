@@ -1,0 +1,33 @@
+---
+layout: default
+permalink: /articles/
+---
+
+<div class="lg-page lg-height-full">
+
+  {% include nav.html %}
+
+  <div class="lg-article lg-height-full lg-align-middle p3">
+    <section class="center-block" style="max-width: 34rem" >
+
+      <h1 class="font-size-2">Articles</h1>
+
+        {% for post in site.posts %}
+          <div>
+            <time class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</time>
+
+            <h2>
+              <a class="post-link color-blue underline-none" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+            </h2>
+          </div>
+        {% endfor %}
+
+      <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+    </section>
+
+  </div>
+
+  {% include header.html %}
+
+</div>
