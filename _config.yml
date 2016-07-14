@@ -17,3 +17,5 @@ github_username:  danklammer
 
 # Build settings
 markdown: kramdown
+sass:
+  style: compressed
