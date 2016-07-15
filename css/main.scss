@@ -72,6 +72,10 @@ p a { color: #3498db }
 
     .navlink-off:hover:after { width: 100%; background: #3498db }
 
+    .lg-section {
+        width: 34rem
+    }
+
     .lg-header {
         position: fixed;
         z-index: 1;
@@ -97,20 +101,27 @@ p a { color: #3498db }
         padding: 7rem 0 5rem;
     }
 
-    .lg-footer {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 6rem;
-        height: 100vh;
+    .lg-work-center {
+        height: 22vw;
     }
 
-    .lg-footer a { display: block }
+    // .lg-footer {
+    //     position: fixed;
+    //     top: 0;
+    //     left: 0;
+    //     width: 6rem;
+    //     height: 100vh;
+    // }
 
+    // .lg-footer a { display: block }
 
-    .lg-post {
-        margin-left: 6rem;
-    }
+    // .lg-footer .title {
+    //     writing-mode: vertical-lr;
+    // }
+
+    // .lg-post {
+    //     margin-left: 6rem;
+    // }
 
 
 }

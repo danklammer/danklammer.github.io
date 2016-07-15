@@ -1,5 +1,5 @@
 <nav class="nav lg-nav bg-slate width-full align-center py3">
-    <div class="navlink inline-block px3"><a href="/" {% if page.url == "/" %}
+    <div class="navlink inline-block px3"><a href="/" {% if page.url == "/" or page.url contains "/work/" %}
                class="font-size-5 underline-none lowercase py3 color-white navlink-on" 
     {% else %} class="font-size-5 underline-none lowercase py3 color-white navlink-off" {% endif %}>Work</a></div><!--
     
