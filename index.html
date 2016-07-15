@@ -11,17 +11,17 @@ layout: default
     <section class="width-full center-block">
 
         {% for post in site.categories.work %}<!--
-        --><div class="xlg-width-33 lg-width-50 sm-width-100 inline-block p2">
+        --><div class="lg-width-50 sm-width-100 inline-block p2">
           <a class="center-block align-center color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden {% if post.hero-image == "" or post.hero-image == nil %}align-middle{% endif %}" style="background: {{ post.color }};" href="{{ post.url | prepend: site.baseurl }}" >
 
-            <div class="inline-block-middle px3 pt4 pb3">
+            <div class="center-block px3 pt4 pb3">
                 <h2 class="font-size-1">{{ post.title }}</h2>
                 <time class="block font-size-6 line-height-none tracking-wide opacity-8 py2">{{ post.year }}</time>
                 <span class="font-size-5 line-height tracking-slight font-weight-5">{{ post.tagline }}</span>
             </div>
 
             {% if post.hero-image %}
-            <img src="{{ post.hero-image }}" class="inline-block-middle">
+            <img src="{{ post.hero-image }}" width="450" height="400" class="width-full inline-block-middle">
             {% endif %}
 
           </a>
