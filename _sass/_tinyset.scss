@@ -320,12 +320,13 @@ i, em, .italic {
 
 /* Border Radius */
 
-.br1 { border-radius: .125rem  }
-.br2 { border-radius: .1875rem }
-.br3 { border-radius: .25rem   }
-.br4 { border-radius: .5rem    }
-.br5 { border-radius: 1rem     }
-.br6 { border-radius: 2rem     }
+.br1    { border-radius: .125rem  }
+.br2    { border-radius: .1875rem }
+.br3    { border-radius: .25rem   }
+.br4    { border-radius: .5rem    }
+.br5    { border-radius: 1rem     }
+.br6    { border-radius: 2rem     }
+.br-all { border-radius: 50%      }
 
 
 /* Opacity */
@@ -416,6 +417,10 @@ i, em, .italic {
     .sm-left { float: left }
     .sm-right { float: right }
 
+    .sm-absolute { position: absolute }
+    .sm-fixed { position: fixed }
+    .sm-relative { position: relative }
+
     .sm-hide { display: none !important }
     .sm-show { display: inherit !important }
 
@@ -447,6 +452,10 @@ i, em, .italic {
 
     .lg-left { float: left }
     .lg-right { float: right }
+
+    .lg-absolute { position: absolute }
+    .lg-fixed { position: fixed }
+    .lg-relative { position: relative }
 
     .lg-hide { display: none !important }
     .lg-show { display: inherit !important }
