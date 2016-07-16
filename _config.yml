@@ -8,8 +8,8 @@
 # Site settings
 title: Dan Klammer
 email: me@danklammer.com
-description: > # this means to ignore newlines until "baseurl:"
-  Designer & Developer
+description: Designer & Developer from Cleveland, Ohio
+tagline: Passionate about creating digital products—obsessed with simplicity & performance.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://danklammer.com" # the base hostname & protocol for your site
 twitter_username: danklammer
