@@ -32,13 +32,13 @@ layout: default
 
 <script>
 
-  console.log("from = " + localStorage.getItem("via"));
+  console.log("from = " + sessionStorage.getItem("via"));
 
-  if (localStorage.getItem("via") == "articles") {
+  if (sessionStorage.getItem("via") == "articles") {
     document.getElementById("close-post").style.display = "block";
   }
 
-  localStorage.setItem("via", "post");
-  console.log("on = " + localStorage.getItem("via"));
+  sessionStorage.setItem("via", "post");
+  console.log("on = " + sessionStorage.getItem("via"));
 
 </script>

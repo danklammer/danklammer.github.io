@@ -33,13 +33,13 @@ layout: default
 
 <script>
 
-  console.log("from = " + localStorage.getItem("via"));
+  console.log("from = " + sessionStorage.getItem("via"));
 
-  if (localStorage.getItem("via") == "home") {
+  if (sessionStorage.getItem("via") == "home") {
     document.getElementById("close-post").style.display = "block";
   }
 
-  localStorage.setItem("via", "projects");
-  console.log("on = " + localStorage.getItem("via"));
+  sessionStorage.setItem("via", "projects");
+  console.log("on = " + sessionStorage.getItem("via"));
 
 </script>
