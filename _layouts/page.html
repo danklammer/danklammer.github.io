@@ -19,3 +19,12 @@ layout: default
   {% include header.html %}
 
 </div>
+
+
+<script>
+
+  console.log("from = " + localStorage.getItem("via"));
+  localStorage.setItem("via", "page");
+  console.log("on = " + localStorage.getItem("via"));
+  
+</script>

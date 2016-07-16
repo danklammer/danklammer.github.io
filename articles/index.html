@@ -34,3 +34,11 @@ permalink: /articles/
   {% include header.html %}
 
 </div>
+
+<script>
+
+  console.log("from = " + localStorage.getItem("via"));
+  localStorage.setItem("via", "articles");
+  console.log("on = " + localStorage.getItem("via"));
+  
+</script>

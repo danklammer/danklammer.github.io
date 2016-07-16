@@ -3,14 +3,17 @@ layout: default
 ---
 
 <a href="{{ site.baseurl }}/" class="lg-fixed sm-hide inline-block color-gray dim-bg-black underline-none lowercase py1 px3 m3 br3">&larr; All Work</a>
-<a href="{{ site.baseurl }}/" class="lg-fixed sm-absolute inline-block line-height-none dim-color-black yunderline-none p3 m1 t0 r0">
-    <svg viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6%">
-        <title>All Work</title>
-        <path d="M2 30 L30 2 M30 30 L2 2" />
-    </svg>
-</a>
 
-<article class="lg-post lg-height-full lg-align-middle px4 py5" itemscope itemtype="http://schema.org/BlogPosting">
+<div id="close-post" class="align-right hide">
+  <a href="{{ site.baseurl }}/" onclick="window.history.back()" class="lg-fixed inline-block line-height-none dim-color-black yunderline-none p3 m1 t0 r0">
+      <svg viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6%">
+          <title>All Work</title>
+          <path d="M2 30 L30 2 M30 30 L2 2" />
+      </svg>
+  </a>
+</div>
+
+<article class="lg-post lg-height-full lg-align-middle px4 py4" itemscope itemtype="http://schema.org/BlogPosting">
   <section class="lg-section center-block" style="max-width: 34rem" >
 
       <header class="post-header">
@@ -26,3 +29,17 @@ layout: default
 </article>
 
 {% include footer.html %}
+
+
+<script>
+
+  console.log("from = " + localStorage.getItem("via"));
+
+  if (localStorage.getItem("via") == "home") {
+    document.getElementById("close-post").style.display = "block";
+  }
+
+  localStorage.setItem("via", "projects");
+  console.log("on = " + localStorage.getItem("via"));
+
+</script>
