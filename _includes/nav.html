@@ -1,17 +1,17 @@
 <nav class="nav lg-nav bg-slate width-full align-center py3">
-    <div class="navlink inline-block px3"><a href="/" {% if page.url == "/" or page.url contains "/work/" %}
+    <div class="navlink inline-block px3"><a href="{{ site.baseurl }}/" {% if page.url == "/" or page.url == "/work/" %}
                class="font-size-5 underline-none lowercase py3 color-white navlink-on" 
     {% else %} class="font-size-5 underline-none lowercase py3 color-white navlink-off" {% endif %}>Work</a></div><!--
     
- --><div class="navlink inline-block px3"><a href="/articles/" {% if page.url contains "/articles/" %}
+ --><div class="navlink inline-block px3"><a href="{{ site.baseurl }}/articles/" {% if page.url == "/articles/" %}
                class="font-size-5 underline-none lowercase py3 color-white navlink-on" 
     {% else %} class="font-size-5 underline-none lowercase py3 color-white navlink-off" {% endif %}>Articles</a></div><!--
     
- --><div class="navlink inline-block px3"><a href="/about/" {% if page.url contains "/about/" %}
+ --><div class="navlink inline-block px3"><a href="{{ site.baseurl }}/about/" {% if page.url == "/about/" %}
                class="font-size-5 underline-none lowercase py3 color-white navlink-on" 
     {% else %} class="font-size-5 underline-none lowercase py3 color-white navlink-off" {% endif %}>About</a></div><!--
     
- --><div class="navlink inline-block px3"><a href="/contact/" {% if page.url contains "/contact/" %}
+ --><div class="navlink inline-block px3"><a href="{{ site.baseurl }}/contact/" {% if page.url == "/contact/" %}
                class="font-size-5 underline-none lowercase py3 color-white navlink-on" 
     {% else %} class="font-size-5 underline-none lowercase py3 color-white navlink-off" {% endif %}>Contact</a></div>
 
