@@ -32,14 +32,8 @@ layout: default
 
 
 <script>
-
   console.log("from = " + sessionStorage.getItem("via"));
-
   if (sessionStorage.getItem("via") == "home") {
     document.getElementById("close-post").style.display = "block";
   }
-
-  sessionStorage.setItem("via", "projects");
-  console.log("on = " + sessionStorage.getItem("via"));
-
 </script>

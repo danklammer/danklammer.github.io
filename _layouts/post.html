@@ -31,14 +31,8 @@ layout: default
 {% include footer.html %}
 
 <script>
-
   console.log("from = " + sessionStorage.getItem("via"));
-
   if (sessionStorage.getItem("via") == "articles") {
     document.getElementById("close-post").style.display = "block";
   }
-
-  sessionStorage.setItem("via", "post");
-  console.log("on = " + sessionStorage.getItem("via"));
-
 </script>
