@@ -10,7 +10,6 @@
     "syntax-highlighting"
 ;
 
-
 // Font Family
 .font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
 .font-menlo, code { font-family: Menlo, Consolas, Monaco, monospace }
@@ -43,7 +42,7 @@
  }
 
 .navlink-on:after { width: 100%; background: #3498db }
-
+.notouch .navlink-off:hover:after { width: 100%; background: #3498db }
 
 // Custom Properties
 p a { color: #3498db }
@@ -69,8 +68,6 @@ p a { color: #3498db }
 // Custom Media Queries
 
 @media (min-width: 60rem) {
-
-    .navlink-off:hover:after { width: 100%; background: #3498db }
 
     .lg-section {
         width: 34rem

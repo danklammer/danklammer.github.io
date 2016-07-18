@@ -18,4 +18,12 @@
 
   <link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
 
+  <script type="text/javascript">
+    if ('ontouchstart' in window || navigator.maxTouchPoints) {
+      document.getElementsByTagName('html')[0].className += 'touch';
+    } else {
+      document.getElementsByTagName('html')[0].className += 'notouch';
+    }
+  </script>
+
 </head>
