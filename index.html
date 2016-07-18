@@ -7,21 +7,21 @@ layout: default
   {% include nav.html %}
   {% include header.html %}
 
-  <div class="lg-work lg-height-full lg-align-middle p2">
+  <div class="lg-work p2">
     <section class="width-full center-block">
 
         {% for post in site.categories.work %}<!--
         --><div class="lg-width-50 sm-width-100 inline-block p2">
-          <a class="center-block align-center color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden {% if post.hero-image == "" or post.hero-image == nil %}align-middle{% endif %}" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
+          <a class="center-block align-center color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden {% if post.cover-image == "" or post.cover-image == nil %}align-middle{% endif %}" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
 
             <div class="center-block px3 pt4 pb3">
                 <h2 class="font-size-1">{{ post.title }}</h2>
-                <time class="block font-size-6 tracking-wide opacity-8 py2">{{ post.year }}</time>
+                <time class="block font-size-6 line-height-title tracking-wide opacity-8 py2">{{ post.year }}</time>
                 <span class="font-size-5 line-height-title tracking-slight font-weight-5">{{ post.tagline }}</span>
             </div>
 
-            {% if post.hero-image %}
-            <img src="{{ post.hero-image }}" width="450" height="400" class="width-full inline-block-middle">
+            {% if post.cover-image %}
+            <img src="{{ post.cover-image }}" width="450" height="400" class="width-full inline-block-middle">
             {% endif %}
 
           </a>

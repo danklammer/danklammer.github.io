@@ -1,31 +1,35 @@
 ---
 layout: default
 ---
+<article class="lg-post lg-height-full" itemscope itemtype="http://schema.org/BlogPosting">
 
-<a href="{{ site.baseurl }}/articles/" class="lg-fixed sm-hide inline-block color-gray dim-bg-black underline-none lowercase py1 px3 m3 br3">&larr; All Articles</a>
+  <header class="align-center color-white px3 pt5 pb4" style="background: linear-gradient( rgba({{ page.color }}, 0.85), rgba({{ page.color }}, 0.85)), url({{ page.cover-image }}); background-size: cover; background-position: center center;">
 
-<div id="close-post" class="align-right hide">
-  <div onclick="window.history.back()" class="lg-fixed inline-block line-height-none dim-color-black yunderline-none p3 m1 t0 r0 pointer">
-      <svg viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6%">
-          <title>All Articles</title>
-          <path d="M2 30 L30 2 M30 30 L2 2" />
-      </svg>
-  </div>
-</div>
+      <a href="{{ site.baseurl }}/articles/" class="lg-absolute l1 t1 sm-hide inline-block color-white dim-bg-white underline-none lowercase py1 px3 m2 br3">&larr; All Articles</a>
 
-<article class="lg-post lg-height-full lg-align-middle px4 py4" itemscope itemtype="http://schema.org/BlogPosting">
-  <section class="lg-section center-block" style="max-width: 34rem" >
-
-      <header class="post-header">
-        <h1 class="post-title font-size-2" itemprop="name headline">{{ page.title }}</h1>
-        <p class="post-meta"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} <small class="font-size-8 p2">&bull;</small> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
-      </header>
-
-      <div class="post-content" itemprop="articleBody">
-        {{ content }}
+      <div onclick="window.history.back()" id="close-post" class="absolute t0 r0 hide inline-block line-height-none dim-color-white p3 pointer">
+          <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
+              <title>All Work</title>
+              <path d="M2 30 L30 2 M30 30 L2 2" />
+          </svg>
       </div>
 
+      <div class="center-block text-shadow-medium pt3">
+        <h1 class="font-size-1 line-height-none py2" itemprop="name headline">{{ page.title }}</h1>
+        <h3 class="font-size-4 line-height-title font-weight-3 pt1 px3" itemprop="subheadline">{{ page.subtitle }}</h3>
+        <p class="font-size-6 line-height-none pt4 opacity-8"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} <small class="font-size-8 p2">&bull;</small> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+      </div>
+
+  </header>
+
+  <section class="center-block pt3 px3 pb5" style="max-width: 34rem">
+
+    <div class="post-content" itemprop="articleBody">
+      {{ content }}
+    </div>
+
   </section>
+
 </article>
 
 {% include footer.html %}
