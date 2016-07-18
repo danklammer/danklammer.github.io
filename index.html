@@ -12,7 +12,7 @@ layout: default
 
         {% for post in site.categories.work %}<!--
         --><div class="lg-width-50 sm-width-100 inline-block p2">
-          <a class="center-block align-center color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden {% if post.cover-image == "" or post.cover-image == nil %}align-middle{% endif %}" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
+          <a class="center-block align-center color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
 
             <div class="center-block px3 pt4 pb3">
                 <h2 class="font-size-1">{{ post.title }}</h2>
@@ -21,7 +21,7 @@ layout: default
             </div>
 
             {% if post.cover-image %}
-            <img src="{{ post.cover-image }}" width="450" height="400" class="width-full inline-block-middle">
+            <img src="{{ post.cover-image }}" width="450" height="400" class="block width-full">
             {% endif %}
 
           </a>
