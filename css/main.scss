@@ -44,6 +44,10 @@
 .navlink-on:after { width: 100%; background: #3498db }
 .notouch .navlink-off:hover:after { width: 100%; background: #3498db }
 
+.notouch .article-link { border-left: 0 solid transparent; transition: all 0.2s ease }
+.notouch .article-link:hover {  border-left: .25rem solid #3498db }
+
+
 // Custom Properties
 p a { color: #3498db }
 
@@ -68,6 +72,8 @@ p a { color: #3498db }
 // Custom Media Queries
 
 @media (min-width: 60rem) {
+
+    .lg-section { width: 34rem }
 
     .lg-header {
         position: fixed;
@@ -97,24 +103,5 @@ p a { color: #3498db }
     .lg-work-center {
         height: 22vw;
     }
-
-    // .lg-footer {
-    //     position: fixed;
-    //     top: 0;
-    //     left: 0;
-    //     width: 6rem;
-    //     height: 100vh;
-    // }
-
-    // .lg-footer a { display: block }
-
-    // .lg-footer .title {
-    //     writing-mode: vertical-lr;
-    // }
-
-    // .lg-post {
-    //     margin-left: 6rem;
-    // }
-
 
 }
