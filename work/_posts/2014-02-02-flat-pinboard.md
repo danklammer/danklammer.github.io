@@ -3,7 +3,7 @@ layout:         project
 title:          "Flat Pinboard"
 tagline:        "A simple Pinboard.in userstyle"
 year:           2014
-color:          "#1b95e4"
+color:          "27, 149, 228"
 hero-image:     /img/work-flatpinboard-hero.jpg
 hero-position:  left
 permalink:      /flat-pinboard/
