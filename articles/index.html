@@ -15,8 +15,8 @@ permalink: /articles/
 
       <ul class="list-reset" style="border-top: 0.125rem solid #eff1f5">
         {% for post in site.categories.articles %}
-          <div style="border-bottom: .125rem solid #eff1f5">
-          <a href="{{ post.url | prepend: site.baseurl }}" class="article-link block color-gray underline-none line-height-title px2 py3">
+        <div style="border-bottom: .125rem solid #eff1f5">
+          <a href="{{ post.url | prepend: site.baseurl }}" class="article-link block color-gray underline-none line-height-title py3">
             <time class="font-size-7 font-weight-6 line-height-default lg-right mt3">{{ post.date | date: "%B %-d, %Y" }}</time>
             <h2 class="font-size-4 color-blue  line-height-none pt2 pb1">{{ post.title }}</h2>
             <h4 class="font-size-5">{{ post.subtitle }}</h4>

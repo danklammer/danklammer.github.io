@@ -44,8 +44,8 @@
 .navlink-on:after { width: 100%; background: #3498db }
 .notouch .navlink-off:hover:after { width: 100%; background: #3498db }
 
-.notouch .article-link { border-left: 0 solid transparent; transition: all 0.2s ease }
-.notouch .article-link:hover {  border-left: .25rem solid #3498db }
+.notouch .article-link { transition: padding 0.2s ease }
+.notouch .article-link:hover { padding-left: 0.5rem }
 
 
 // Custom Properties
