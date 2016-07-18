@@ -1,34 +1,35 @@
 ---
 layout: default
 ---
+<article class="lg-post lg-height-full" itemscope itemtype="http://schema.org/BlogPosting">
 
-<a href="{{ site.baseurl }}/" class="lg-fixed sm-hide inline-block color-gray dim-bg-black underline-none lowercase py1 px3 m3 br3">&larr; All Work</a>
+  <header class="align-center color-white pt4 px3 pb4" style="background: linear-gradient( rgba({{ page.color }}, 0.92), rgba({{ page.color }}, 0.92)), url({{ page.hero-image }}); background-size: cover; background-position: center center;">
 
-<div id="close-post" class="align-right hide">
-  <div onclick="window.history.back()" class="lg-fixed inline-block line-height-none dim-color-black yunderline-none p3 m1 t0 r0 pointer">
-      <svg viewBox="0 0 32 32" width="32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="6%">
-          <title>All Work</title>
-          <path d="M2 30 L30 2 M30 30 L2 2" />
-      </svg>
-  </div>
-</div>
+      <a href="{{ site.baseurl }}/" class="lg-absolute l1 t1 sm-hide inline-block color-white dim-bg-black underline-none lowercase py1 px3 m2 br3">&larr; All Work</a>
 
-<article class="lg-post lg-height-full lg-align-middle px4 py4" itemscope itemtype="http://schema.org/BlogPosting">
-  <section class="lg-section center-block" style="max-width: 34rem" >
-
-      <header class="relative center-block align-center color-white line-height-none text-shadow-medium overflow-hidden py4 px3 br3"  style="background-color: rgb({{ page.color }})">
-        <h1 class="relative z2 post-title font-size-2" itemprop="name headline">{{ page.title }}</h1>
-        <p class="relative z2 post-meta"><time>{{ page.year }}</time></p>
-        <h3 class="relative z2 font-size-5 line-height-title tracking-slight font-weight-5">{{ page.tagline }}</h3>
-
-        <div class="absolute z1 t0 l0 width-full opacity-1" style="height: 100%; background-color: {{ page.color }}; background-image: url({{ page.hero-image }}); background-size: cover; background-position: center center;"></div>
-      </header>
-
-      <div class="post-content" itemprop="articleBody">
-        {{ content }}
+      <div onclick="window.history.back()" id="close-post" class="fixed t0 r0 hide inline-block line-height-none color-white p3 pointer">
+          <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
+              <title>All Work</title>
+              <path d="M2 30 L30 2 M30 30 L2 2" />
+          </svg>
       </div>
 
+      <div class="center-block text-shadow-light pt3">
+        <h2 class="font-size-1">{{ page.title }}</h2>
+        <time class="block font-size-6 line-height-none tracking-wide opacity-8 py2">{{ page.year }}</time>
+        <span class="font-size-5 line-height-title tracking-slight font-weight-5">{{ page.tagline }}</span>
+      </div>
+
+  </header>
+
+  <section class="center-block p3" style="max-width: 34rem">
+
+        <div class="post-content" itemprop="articleBody">
+          {{ content }}
+        </div>
+
   </section>
+
 </article>
 
 {% include footer.html %}
