@@ -4,12 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+This whole section needs to be re-written...
 
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
+I'm Dan, a designer and front-end coder with a BFA in Visual Communication Design from the University of Dayton. I've been designing and building websites for over twenty years now. My trademark is simple, clean, usable design.
 
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+You can find the source code for this site at
+{% include icon-github.html username="danklammer" %}
+
+
+It took almost exactly **{% include loadtime.html %} seconds** to load this page for you.
+
+
+{% include loadtime.js %}
