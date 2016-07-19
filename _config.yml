@@ -12,7 +12,7 @@ description: Designer & Developer from Cleveland, Ohio
 tagline: Passionate about creating digital products—obsessed with simplicity & performance.
 baseurl: "/"
 url: "http://danklammer.com"
-production_url : http://danklammer.com
+# production_url: http://danklammer.com
 twitter_username: danklammer
 github_username:  danklammer
 
