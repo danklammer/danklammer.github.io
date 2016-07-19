@@ -14,7 +14,7 @@ url: "http://danklammer.com"
 production_url: http://danklammer.com
 twitter_username: danklammer
 github_username:  danklammer
-contact_email: mailman@danklammer.com
+contact_email: mailman@ic3box.com
 
 # Build settings
 exclude: ["node_modules", "README", "README.md", bower.json", ".travis.yml", ".gitignore", ".gitattributes", ".gitmodules", "LICENSE", "CHANGELOG.md", "Gemfile", "Gemfile.lock"]
