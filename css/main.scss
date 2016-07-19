@@ -50,6 +50,7 @@
 
 // Custom Properties
 p a { color: #3498db }
+p strong { font-weight: 600 }
 
 .icon svg { width: 16px }
 
@@ -68,9 +69,7 @@ p a { color: #3498db }
 }
 
 
-
 // Custom Media Queries
-
 @media (min-width: 60rem) {
 
     .lg-section { width: 34rem }
