@@ -68,8 +68,16 @@ p strong { font-weight: 600 }
     border-radius: .1875rem;
 }
 
+.lg-page .header-tagline { display: none }
+
 
 // Custom Media Queries
+@media (max-width: 60rem) {
+
+    .site-page .sm-header-tagline { display: none }
+    
+}
+
 @media (min-width: 60rem) {
 
     .lg-section { width: 34rem }
