@@ -10,12 +10,14 @@ title: Dan Klammer
 email: me@danklammer.com
 description: Designer & Developer from Cleveland, Ohio
 tagline: Passionate about creating digital products—obsessed with simplicity & performance.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://danklammer.com" # the base hostname & protocol for your site
+baseurl: "/"
+url: "http://danklammer.com"
+production_url : http://danklammer.com
 twitter_username: danklammer
 github_username:  danklammer
 
 # Build settings
+exclude: ["node_modules", "README", "README.md", bower.json", ".travis.yml", ".gitignore", ".gitattributes", ".gitmodules", "LICENSE", "CHANGELOG.md", "Gemfile", "Gemfile.lock"]
 markdown: kramdown
 sass:
   style: compressed
