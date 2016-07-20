@@ -2,41 +2,8 @@
 layout: default
 ---
 
-<div class="site-home lg-page lg-height-full">
-
-  {% include nav.html %}
-  {% include header.html %}
-
-  <div class="p2">
-    <section class="width-full center-block align-center pb3">
-
-        {% for post in site.categories.work %}<!--
-        --><div class="lg-width-50 sm-width-100 inline-block p2">
-          <a class="center-block color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
-
-            <div class="center-block px3 pt4 pb3">
-                <h2 class="font-size-1">{{ post.title }}</h2>
-                <time class="block font-size-6 line-height-title tracking-wide opacity-8 py2">{{ post.year }}</time>
-                <span class="font-size-5 line-height-title tracking-slight font-weight-5">{{ post.tagline }}</span>
-            </div>
-
-            {% if post.cover-image %}
-            <img src="{{ post.cover-image }}" width="450" height="400" class="block width-full no-select">
-            {% endif %}
-
-          </a>
-        </div><!--
-        -->{% endfor %}
-
-        {% include copyright.html %}
-
-    </section>
-
-  </div>
-
-</div>
-
-
-<script>
-  sessionStorage.setItem("via", "home");
-</script>
+{% if site.splash == true %}
+  {% include splash.html %}
+{% else %}
+  {% include homepage.html %}
+{% endif %}
