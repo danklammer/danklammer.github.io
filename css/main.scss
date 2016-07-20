@@ -58,9 +58,11 @@
 .contact-form input:focus,
 .contact-form textarea:focus { border: 2px solid #3498db }
 
+
 // Custom Properties
 p a { color: #3498db }
 p strong { font-weight: 600 }
+p img { border-radius: .25rem }
 
 .icon svg { width: 16px }
 
@@ -114,7 +116,7 @@ p strong { font-weight: 600 }
     }
 
     .lg-article {
-        padding: 7rem 0 5rem;
+        padding: 4rem 0 2rem;
     }
 
     .lg-work-center {
