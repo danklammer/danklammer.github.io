@@ -11,7 +11,7 @@
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} &mdash; {{ site.title }}{% else %}{{ site.title | escape }} &mdash; {{ site.description }}{% endif %}">
   <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.tagline }}{% endif %}">
-  <meta property="og:image" content="image.png" />
+  <meta property="og:image" content="{{ "/img/meta/dk-og.jpg" | prepend: site.url }}">
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
