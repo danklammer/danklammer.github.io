@@ -363,24 +363,29 @@ i, em, .italic {
 /* Hover Dim */
 
 .dim { opacity: .85; transition: opacity .2s ease }
-.dim:hover { opacity: 1 }
+.dim:hover, .dim:focus { opacity: 1 }
 
 .dim-color-white { color: rgba(255,255,255,.85); transition: color .2s ease }
-.dim-color-white:hover { color: rgba(255,255,255,1) }
+.dim-color-white:hover, .dim-color-white:focus { color: rgba(255,255,255,1) }
 
 .dim-color-black { color: rgba(0,0,0,.85); transition: color .2s ease }
-.dim-color-black:hover { color: rgba(0,0,0,1) }
+.dim-color-black:hover, .dim-color-black:focus { color: rgba(0,0,0,1) }
 
 .dim-bg-white { background-color: rgba(255,255,255,.15); transition: background-color .2s ease }
-.dim-bg-white:hover { background-color: rgba(255,255,255,.2) }
+.dim-bg-white:hover, .dim-bg-white:focus { background-color: rgba(255,255,255,.2) }
 
 .dim-bg-black { background-color: rgba(0,0,0,.15); transition: background-color .2s ease }
-.dim-bg-black:hover { background-color: rgba(0,0,0,.2) }
+.dim-bg-black:hover, .dim-bg-black:focus { background-color: rgba(0,0,0,.2) }
 
 
 /* Interactions  */
 
 .pointer { cursor: pointer }
+
+.pressable:active {
+    position: relative;
+    top: 1px;
+}
 
 .no-select {
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
