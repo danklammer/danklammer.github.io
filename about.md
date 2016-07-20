@@ -4,12 +4,12 @@ title: About
 permalink: /about/
 ---
 
-This whole section needs to be re-written...
+![This is me!](/img/about/dan-klammer.jpg)
 
-I'm Dan, a designer and front-end coder with a BFA in Visual Communication Design from the University of Dayton. I've been designing and building websites for over twenty years now. My trademark is simple, clean, usable design.
+### **I'm Dan, a designer and front-end coder from Cleveland, Ohio.**
 
+I’ve been designing and building websites and apps for over fifteen years. I am passionate about everything design and the web.
 
-It took almost exactly **{% include loadtime.html %} seconds** to load this page for you.
+More recently, I co-founded a web startup&mdash;raising over 3 million dollars to build apps for millions of users. From the business decision making, to UX and UI, to product development, I've had my hands in it all.
 
-
-{% include loadtime.js %}
+My true love is in creating well-designed, fast, and accessible digital products for others to enjoy.
