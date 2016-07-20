@@ -8,13 +8,13 @@
 <form method="POST" action="https://formspree.io/{{ site.contact_email }}" class="contact-form relative clearfix" style="margin: 0 -0.5rem">
     
     <div class="inline-block width-full lg-width-50 p2">
-        <input type="text" name="name" placeholder="Your name" onblur="passName(this.value)" required class="width-full p2 br3">
+        <input type="text" name="name" placeholder="Your name" onblur="passName(this.value)" required class="width-full p2 br3" tabindex="1">
 
     </div><div class="inline-block width-full lg-width-50 p2">
-        <input type="email" name="_replyto" placeholder="Your email" required required class="width-full p2 br3">
+        <input type="email" name="_replyto" placeholder="Your email" required required class="width-full p2 br3" tabindex="2">
 
     </div><div class="inline-block width-full p2">
-        <textarea name="message" rows="4" cols="50" placeholder="Your message" required class="width-full p2 br3" style="resize:none"></textarea>
+        <textarea name="message" rows="4" cols="50" placeholder="Your message" required class="width-full p2 br3" style="resize:none" tabindex="3"></textarea>
 
     </div>
 
@@ -23,6 +23,6 @@
     <input type="hidden" name="_format" value="plain" />
     <input type="hidden" name="_next" value="/thanks/" />
 
-    <button type="submit" value="Send" class="color-white bg-blue py1 px3 mx2 br3 right">Submit</button>
+    <button type="submit" value="Send" class="color-white bg-blue py1 px3 mx2 br3 right" tabindex="4">Submit</button>
 
 </form>
