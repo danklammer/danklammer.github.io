@@ -47,6 +47,9 @@
 .notouch .article-link { transition: padding 0.2s ease }
 .notouch .article-link:hover { padding-left: 0.5rem }
 
+.social-link { color: rgba(0, 0, 0, 0.5); transition: color 0.2s ease }
+.notouch .social-link:hover { color: inherit }
+
 
 // Contact Form
 .contact-form input,
