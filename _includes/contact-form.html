@@ -1,28 +1,34 @@
-<script>       
-    var passName = function(val){
+<script type="application/javascript">
+    var passName = function(subjectName){
         var contactSubject = document.getElementById("contact-subject");
-        contactSubject.value = "DK Form - " + val;
+        contactSubject.value = "DK Form - " + subjectName;
+    };
+    function getIP(json) {
+        var contactLocation = document.getElementById("contact-location");
+        contactLocation.value = "http://www.infosniper.net/?ip_address=" + json.ip;
     }
 </script>
 
 <form method="POST" action="https://formspree.io/{{ site.contact_email }}" class="contact-form relative clearfix" style="margin: 0 -0.5rem">
     
     <div class="inline-block width-full lg-width-50 p2">
-        <input type="text" name="name" placeholder="Your name" onblur="passName(this.value)" required class="width-full p2 br3" tabindex="1">
+        <input type="text" name="name" placeholder="Your name" onblur="passName(this.value)" class="width-full p2 br3" tabindex="1" required>
 
     </div><div class="inline-block width-full lg-width-50 p2">
-        <input type="email" name="_replyto" placeholder="Your email" required required class="width-full p2 br3" tabindex="2">
+        <input type="email" name="_replyto" placeholder="Your email" class="width-full p2 br3" tabindex="2" required>
 
     </div><div class="inline-block width-full p2">
-        <textarea name="message" rows="4" cols="50" placeholder="Your message" required class="width-full p2 br3" style="resize:none" tabindex="3"></textarea>
+        <textarea name="message" rows="4" cols="50" placeholder="Your message" class="width-full p2 br3" style="resize:none" tabindex="3" required></textarea>
 
     </div>
 
     <input type="text" name="_gotcha" class="hide" />
-    <input type="hidden" name="_subject" value="DK Form - " id="contact-subject" />
-    <input type="hidden" name="_format" value="plain" />
-    <input type="hidden" name="_next" value="/thanks/" />
+    <input type="hidden" name="location" id="contact-location">
+    <input type="hidden" name="_subject" id="contact-subject" value="DK Form - " />
+    <input type="hidden" name="_next" value="//contact/thanks/" />
 
     <button type="submit" value="Send" class="color-white bg-blue right py1 px3 mx2 br3 dim pointer pressable" tabindex="4">Submit</button>
 
 </form>
+
+<script type="application/javascript" src="https://api.ipify.org?format=jsonp&callback=getIP" async></script>
