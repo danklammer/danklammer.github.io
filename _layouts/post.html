@@ -36,8 +36,20 @@ layout: default
 {% include footer.html %}
 
 <script>
+
   console.log("from = " + sessionStorage.getItem("via"));
   if (sessionStorage.getItem("via") == "articles") {
     document.getElementById("close-post").style.display = "block";
   }
+
+  [].forEach.call(
+    document.querySelectorAll('.post-content img'), 
+    function(e){
+      e.addEventListener("click", function(full){
+        this.classList.toggle("full");
+      }, false);
+
+    }
+  );
+
 </script>
