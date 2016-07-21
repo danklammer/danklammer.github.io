@@ -43,10 +43,13 @@ layout: default
   }
 
   [].forEach.call(
-    document.querySelectorAll('.post-content img'), 
+    document.querySelectorAll(".post-content img"), 
     function(e){
-      e.addEventListener("click", function(full){
-        this.classList.toggle("full");
+
+      e.parentElement.classList.add("img-zoom");
+
+      e.addEventListener("click", function(zoom){
+        this.parentElement.classList.toggle("zoom");
       }, false);
 
     }

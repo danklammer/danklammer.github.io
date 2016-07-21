@@ -63,20 +63,22 @@
 .post-content a,
 .page-content a { color: #3498db }
 
-.post-content img {
+.img-zoom {
+    text-align: center;
+    width: 100%;
+}
+
+.img-zoom img {
     border-radius: .25rem;
     cursor: pointer;
     width: 100%;
-    transition: all 0.5s ease;
+    max-width: 60rem;
 }
 
-.post-content img.full {
-    border-radius: 0;
+.zoom {
     width: 100vw;
     max-width: 100vw;
-    padding: .5rem 0;
-    transform: translateX(calc((32rem/2) - 50vw));
-    transition: all 0.5s ease;
+    margin-left: calc((32rem/2) - 50vw);
 }
 
 .highlight {
@@ -99,16 +101,15 @@
 // Custom Media Queries
 @media (max-width: 34rem) {
 
-    .post-content img.full {
-        transform: translateX(-1rem);
-    }
+    .zoom { margin-left: -1rem }
 
 }
 
 @media (max-width: 60rem) {
 
     .site-page .sm-header-tagline { display: none }
-    
+    .zoom img { border-radius: 0 }
+
 }
 
 @media (min-width: 60rem) {
