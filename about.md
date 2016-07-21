@@ -4,7 +4,7 @@ title: About
 permalink: /about/
 ---
 
-![This is me!](/img/about/dan-klammer.jpg)
+![This is me!](/img/about/dan-klammer.jpg){:id: .br3 }
 
 ### **I'm Dan, a designer &amp; front-end coder from Cleveland, Ohio.**
 
