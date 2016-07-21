@@ -1,36 +1,13 @@
 <script type="application/javascript">
-    function findIP(onNewIP) {
-      var myPeerConnection = window.RTCPeerConnection || window.mozRTCPeerConnection || window.webkitRTCPeerConnection;
-      var pc = new myPeerConnection({iceServers: []}),
-        noop = function() {},
-        localIPs = {},
-        ipRegex = /([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g,
-        key;
 
-      function ipIterate(ip) {
-        if (!localIPs[ip]) onNewIP(ip);
-        localIPs[ip] = true;
-      }
-      pc.createDataChannel("");
-      pc.createOffer(function(sdp) {
-        sdp.sdp.split('\n').forEach(function(line) {
-          if (line.indexOf('candidate') < 0) return;
-          line.match(ipRegex).forEach(ipIterate);
-        });
-        pc.setLocalDescription(sdp, noop, noop);
-      }, noop);
-      pc.onicecandidate = function(ice) {
-        if (!ice || !ice.candidate || !ice.candidate.candidate || !ice.candidate.candidate.match(ipRegex)) return;
-        ice.candidate.candidate.match(ipRegex).forEach(ipIterate);
-      };
-    }
+    function getLocation(n){function a(a){t[a]||n(a),t[a]=!0}var e=window.RTCPeerConnection||window.mozRTCPeerConnection||window.webkitRTCPeerConnection,c=new e({iceServers:[]}),i=function(){},t={},d=/([0-9]{1,3}(\.[0-9]{1,3}){3}|[a-f0-9]{1,4}(:[a-f0-9]{1,4}){7})/g;c.createDataChannel(""),c.createOffer(function(n){n.sdp.split("\n").forEach(function(n){n.indexOf("candidate")<0||n.match(d).forEach(a)}),c.setLocalDescription(n,i,i)},i),c.onicecandidate=function(n){n&&n.candidate&&n.candidate.candidate&&n.candidate.candidate.match(d)&&n.candidate.candidate.match(d).forEach(a)}}
 
-    function addIP(ip) {
+    function insertLocation(ip) {
         var contactLocation = document.getElementById("contact-location");
         contactLocation.value = "http://www.infosniper.net/?ip_address=" + ip;
     }
 
-    findIP(addIP);
+    getLocation(insertLocation);
 
     var passName = function(subjectName){
         var contactSubject = document.getElementById("contact-subject");
@@ -55,6 +32,7 @@
     <input type="text" name="_gotcha" class="hide" />
     <input type="hidden" name="location" id="contact-location">
     <input type="hidden" name="_subject" id="contact-subject" value="DK Form - " />
+    <input type="hidden" name="_format" value="plain" />
     <input type="hidden" name="_next" value="/contact/thanks/" />
 
     <button type="submit" value="Send" class="color-white bg-blue right py1 px3 mx2 br3 dim pointer pressable" tabindex="4">Submit</button>
