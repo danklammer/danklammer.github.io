@@ -5,7 +5,7 @@
 
 //Variables
 $lg-breakpoint: 60rem;
-$sm-breakpoint: 38rem;
+$sm-breakpoint: 36rem;
 
 
 // Font Family
@@ -74,7 +74,7 @@ a { color: #3498db }
 .img-zoom.zoom img {
     width: 100vw;
     max-width: 100vw;
-    margin-left: calc((35rem/2) - 50vw);   
+    margin-left: calc((34rem/2) - 50vw);   
 }
 
 .highlight {
@@ -99,8 +99,8 @@ a { color: #3498db }
 @media (max-width: $sm-breakpoint) {
 
     body { font-size: 1rem }
-    .highlight { margin: 0 -1.5rem; border-radius: 0; }
-    .img-zoom.zoom img { margin-left: -1.5rem }
+    .highlight { margin: 0 -1rem; border-radius: 0; }
+    .img-zoom.zoom img { margin-left: -1rem }
 
 }
 
@@ -116,7 +116,7 @@ a { color: #3498db }
     .img-zoom.zoom img {
         width: 110vmin;
         max-width: 110vmin;
-        margin-left: calc((35rem/2) - 55vmin);
+        margin-left: calc((34rem/2) - 55vmin);
     }
 
     .lg-header {
