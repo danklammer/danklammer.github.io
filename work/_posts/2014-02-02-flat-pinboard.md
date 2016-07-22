@@ -4,7 +4,7 @@ title:          "Flat Pinboard"
 tagline:        "A simple Pinboard.in userstyle"
 year:           2014
 color:          "27, 149, 228"
-cover-image:    /img/work/flatpinboard-cover.jpg
+cover-image:    /img/work/flatpinboard/flatpinboard-cover.jpg
 permalink:      /flat-pinboard/
 ---
 
