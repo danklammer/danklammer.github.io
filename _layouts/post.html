@@ -4,9 +4,9 @@ layout: default
 
 <article class="site-post lg-post lg-height-full" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="align-center color-white text-shadow-medium px3 pt5 pb4" style="background: linear-gradient( rgba({{ page.color }}, 0.8), rgba({{ page.color }}, 0.8)), url({{ page.cover-image }}); background-size: cover; background-position: center center;">
+  <header class="align-center color-white text-shadow-medium pt6 px4 pb4" style="background: linear-gradient( rgba({{ page.color }}, 0.8), rgba({{ page.color }}, 0.8)), url({{ page.cover-image }}); background-size: cover; background-position: center center;">
 
-      <a href="{{ site.baseurl }}/articles/" class="lg-absolute l1 t1 sm-hide inline-block color-white dim-bg-white underline-none lowercase py1 px3 m2 br3">&larr; All Articles</a>
+      <a href="{{ site.baseurl }}/articles/" class="lg-absolute l1 t1 sm-hide font-size-5 inline-block color-white dim-bg-white underline-none lowercase py1 px3 m2 br3">&larr; All Articles</a>
 
       <div onclick="window.history.back()" id="close-post" class="absolute t0 r0 hide line-height-none dim-color-white svg-shadow-medium p3 pointer">
           <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
@@ -17,13 +17,13 @@ layout: default
 
       <div class="center-block pt3">
         <h1 class="font-size-1 line-height-none py2" itemprop="name headline">{{ page.title }}</h1>
-        <h3 class="font-size-3 line-height-title font-weight-3 pt1 px3" itemprop="name alternativeHeadline">{{ page.subtitle }}</h3>
+        <h3 class="font-size-3 line-height-title font-weight-3 pt1 px4" itemprop="name alternativeHeadline">{{ page.subtitle }}</h3>
         <p class="font-size-6 line-height-none pt4 opacity-8"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} <small class="font-size-8 p2">&bull;</small> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span rel="author" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
       </div>
 
   </header>
 
-  <section class="lg-section section-max-width center-block pt3 px3 pb5">
+  <section class="section-max-width width-full center-block pt3 px4 pb7">
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}

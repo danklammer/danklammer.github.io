@@ -5,7 +5,7 @@
 
 //Variables
 $lg-breakpoint: 60rem;
-$sm-breakpoint: 35rem;
+$sm-breakpoint: 38rem;
 
 
 // Font Family
@@ -23,6 +23,12 @@ $sm-breakpoint: 35rem;
 .bg-gray { background: #3f414e }
 .bg-slate { background: #282b31 }
 .bg-blue { background: #3498db }
+
+
+// Global Properties
+body { font-size: 1.125rem }
+a { color: #3498db }
+.section-max-width { max-width: $sm-breakpoint }
 
 
 // Navigation
@@ -57,14 +63,6 @@ $sm-breakpoint: 35rem;
 .contact-form textarea:focus { border: 2px solid #3498db }
 
 
-// Post Properties
-
-.section-max-width { max-width: $sm-breakpoint }
-
-.post-content a,
-.page-content a { color: #3498db }
-
-
 // Zoom
 .img-zoom img {
     border-radius: .25rem;
@@ -76,19 +74,20 @@ $sm-breakpoint: 35rem;
 .img-zoom.zoom img {
     width: 100vw;
     max-width: 100vw;
-    margin-left: calc((33rem/2) - 50vw);   
+    margin-left: calc((35rem/2) - 50vw);   
 }
 
 .highlight {
-    font-size: .75rem;
+    font-size: small;
     margin: 0;
     padding: .125rem 1.25rem;
     border-radius: .25rem;
     border-left: .25rem solid #3498db;
+    overflow-x: auto;
 }
 
 .highlighter-rouge {
-    font-size: .75rem;
+    font-size: small;
     padding: 0.25rem;
     border-radius: .1875rem;
 }
@@ -99,7 +98,9 @@ $sm-breakpoint: 35rem;
 // Custom Media Queries
 @media (max-width: $sm-breakpoint) {
 
-    .img-zoom.zoom img { margin-left: -1rem }
+    body { font-size: 1rem }
+    .highlight { margin: 0 -1.5rem; border-radius: 0; }
+    .img-zoom.zoom img { margin-left: -1.5rem }
 
 }
 
@@ -115,10 +116,8 @@ $sm-breakpoint: 35rem;
     .img-zoom.zoom img {
         width: 110vmin;
         max-width: 110vmin;
-        margin-left: calc((33rem/2) - 55vmin);
+        margin-left: calc((35rem/2) - 55vmin);
     }
-
-    .lg-section { width: $sm-breakpoint }
 
     .lg-header {
         position: fixed;
@@ -139,14 +138,6 @@ $sm-breakpoint: 35rem;
         top: 0;
         left: 0;
         width: 35%;
-    }
-
-    .lg-article {
-        padding: 4rem 0 2rem;
-    }
-
-    .lg-work-center {
-        height: 22vw;
     }
 
 }

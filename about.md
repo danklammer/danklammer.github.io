@@ -12,4 +12,4 @@ I’ve been designing and building websites and apps for over fifteen years. I a
 
 More recently, I co-founded a web startup&mdash;raising over 3 million dollars to build apps for millions of users. From the business decision making, to UX and UI, to product development, I've had my hands in it all.
 
-My true love is in creating simple, well-designed, super fast digital products for everyone to enjoy.
+My true love is in creating simple, well-designed, super fast products for everyone to enjoy.
