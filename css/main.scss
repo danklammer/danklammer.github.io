@@ -5,7 +5,7 @@
 
 //Variables
 $lg-breakpoint: 60rem;
-$sm-breakpoint: 36rem;
+$sm-breakpoint: 35rem;
 
 
 // Font Family
@@ -76,7 +76,7 @@ $sm-breakpoint: 36rem;
 .img-zoom.zoom img {
     width: 100vw;
     max-width: 100vw;
-    margin-left: calc((32rem/2) - 50vw);   
+    margin-left: calc((33rem/2) - 50vw);   
 }
 
 .highlight {
@@ -115,7 +115,7 @@ $sm-breakpoint: 36rem;
     .img-zoom.zoom img {
         width: 110vmin;
         max-width: 110vmin;
-        margin-left: calc((32rem/2) - 55vmin);
+        margin-left: calc((33rem/2) - 55vmin);
     }
 
     .lg-section { width: $sm-breakpoint }
