@@ -6,7 +6,7 @@ permalink: /about/
 
 ![This is me!](/img/about/dan-klammer.jpg){:id: .br3 }
 
-### **I'm Dan, a designer &amp; front-end coder from Cleveland, Ohio.**
+### **I'm Dan, a designer &amp; developer from Cleveland, Ohio.**
 
 I’ve been designing and building websites and apps for over fifteen years. I am passionate about everything design and the web.
 
