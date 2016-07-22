@@ -400,7 +400,7 @@ i, em, .italic {
 
 /* Media Queries */
 
-@media (max-width: 60rem) {
+@media (max-width: $lg-breakpoint) {
 
     .sm-width-100 { width: 100% }
     .sm-height-full { min-height: 100vh }
@@ -436,7 +436,7 @@ i, em, .italic {
 
 }
 
-@media (min-width: 60rem) {
+@media (min-width: $lg-breakpoint) {
 
     .lg-width-100 { width: 100% }
     .lg-height-full { min-height: 100vh }

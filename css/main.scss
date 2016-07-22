@@ -3,12 +3,10 @@
 ---
 @charset "utf-8";
 
+//Variables
+$lg-breakpoint: 60rem;
+$sm-breakpoint: 36rem;
 
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-    "tinyset",
-    "syntax-highlighting"
-;
 
 // Font Family
 .font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
@@ -60,6 +58,9 @@
 
 
 // Post Properties
+
+.section-max-width { max-width: $sm-breakpoint }
+
 .post-content a,
 .page-content a { color: #3498db }
 
@@ -96,32 +97,28 @@
 
 
 // Custom Media Queries
-@media (max-width: 34rem) {
+@media (max-width: $sm-breakpoint) {
 
     .img-zoom.zoom img { margin-left: -1rem }
 
 }
 
-@media (max-width: 60rem) {
+@media (max-width: $lg-breakpoint) {
 
     .site-page .sm-header-tagline { display: none }
     .img-zoom.zoom img { border-radius: 0 }
 
 }
 
-@media (min-width: 60rem) {
+@media (min-width: $lg-breakpoint) {
 
     .img-zoom.zoom img {
-        width: 74vw;
-        max-width: 74vw;
-        margin-left: calc((32rem/2) - 37vw);
-
         width: 110vmin;
         max-width: 110vmin;
         margin-left: calc((32rem/2) - 55vmin);
     }
 
-    .lg-section { width: 34rem }
+    .lg-section { width: $sm-breakpoint }
 
     .lg-header {
         position: fixed;
@@ -153,3 +150,10 @@
     }
 
 }
+
+
+// Import partials from `sass_dir` (defaults to `_sass`)
+@import
+    "tinyset",
+    "syntax-highlighting"
+;
