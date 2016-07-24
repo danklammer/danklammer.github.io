@@ -6,7 +6,8 @@
 //Variables
 $lg-breakpoint: 60rem;
 $sm-breakpoint: 36rem;
-
+$article-side-padding: 1.25rem;
+$zoom-margin: (($sm-breakpoint - ($article-side-padding * 2)) / 2);
 
 // Font Family
 .font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
@@ -29,6 +30,7 @@ $sm-breakpoint: 36rem;
 body { font-size: 1.125rem }
 a { color: #3498db }
 .section-max-width { max-width: $sm-breakpoint }
+.article-side-padding { padding-left: $article-side-padding; padding-right: $article-side-padding }
 
 
 // Navigation
@@ -74,7 +76,7 @@ a { color: #3498db }
 .img-zoom.zoom img {
     width: 100vw;
     max-width: 100vw;
-    margin-left: calc((34rem/2) - 50vw);   
+    margin-left: calc(#{$zoom-margin} - 50vw);   
 }
 
 .highlight {
@@ -98,16 +100,31 @@ a { color: #3498db }
 // Custom Media Queries
 @media (max-width: $sm-breakpoint) {
 
-    body { font-size: 1rem }
-    .highlight { margin: 0 -1rem; border-radius: 0; }
-    .img-zoom.zoom img { margin-left: -1rem }
+    body {
+        font-size: 1.032rem
+    }
+
+    .highlight, .sm-fullbleed {
+        margin-left: -$article-side-padding !important;
+        margin-right: -$article-side-padding !important;
+        border-radius: 0 !important;
+    }
+
+    .img-zoom.zoom img {
+        margin-left: -$article-side-padding;
+    }
 
 }
 
 @media (max-width: $lg-breakpoint) {
 
-    .site-page .sm-header-tagline { display: none }
-    .img-zoom.zoom img { border-radius: 0 }
+    .site-page .sm-header-tagline {
+        display: none
+    }
+
+    .img-zoom.zoom img {
+        border-radius: 0
+    }
 
 }
 
@@ -116,7 +133,7 @@ a { color: #3498db }
     .img-zoom.zoom img {
         width: 110vmin;
         max-width: 110vmin;
-        margin-left: calc((34rem/2) - 55vmin);
+        margin-left: calc(#{$zoom-margin} - 55vmin);
     }
 
     .lg-header {
