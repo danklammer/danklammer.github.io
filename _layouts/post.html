@@ -23,7 +23,7 @@ layout: default
 
   </header>
 
-  <section class="section-max-width width-full center-block pt3 pb6 article-side-padding">
+  <section class="section-max-width width-full center-block pt3 pb7 article-side-padding">
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}
@@ -34,25 +34,11 @@ layout: default
 </article>
 
 {% include footer.html %}
+{% include img-zoom.js %}
 
 <script>
-
   console.log("from = " + sessionStorage.getItem("via"));
   if (sessionStorage.getItem("via") == "articles") {
     document.getElementById("close-post").style.display = "block";
   }
-
-  [].forEach.call(
-    document.querySelectorAll(".post-content img"), 
-    function(e){
-
-      e.parentElement.classList.add("img-zoom");
-
-      e.addEventListener("click", function(zoom){
-        this.parentElement.classList.toggle("zoom");
-      }, false);
-
-    }
-  );
-
 </script>

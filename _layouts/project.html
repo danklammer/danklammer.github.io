@@ -23,7 +23,11 @@ layout: default
 
   </header>
 
-  <section class="section-max-width width-full center-block pt3 pb6 article-side-padding">
+  <style>
+    .post-content a { color: rgb({{ page.color }}) }
+  </style>
+
+  <section class="section-max-width width-full center-block pt3 pb7 article-side-padding">
 
     <div class="post-content" itemprop="articleBody">
       {{ content }}
@@ -34,6 +38,7 @@ layout: default
 </article>
 
 {% include footer.html %}
+{% include img-zoom.js %}
 
 <script>
   console.log("from = " + sessionStorage.getItem("via"));
