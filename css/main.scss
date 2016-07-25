@@ -32,6 +32,25 @@ a { color: #3498db }
 .section-max-width { max-width: $sm-breakpoint }
 .article-side-padding { padding-left: $article-side-padding; padding-right: $article-side-padding }
 
+.post-content img {
+    border-radius: .25rem;
+}
+
+.post-content p + h1,
+.post-content p + h2,
+.post-content p + h3,
+.post-content p + h4 {
+    margin-top: 2.25rem;
+}
+
+hr {
+    border-width: 1px 0 0 0;
+    border-style: solid;
+    border-color: #ddd;
+    height: 0;
+    margin: 2.5rem 0;
+}
+
 
 // Navigation
 .navlink-off, .navlink-on { position: relative }
