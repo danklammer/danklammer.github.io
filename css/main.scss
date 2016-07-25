@@ -6,7 +6,9 @@
 //Variables
 $lg-breakpoint: 60rem;
 $sm-breakpoint: 36rem;
+$article-top-padding: 1.5rem;
 $article-side-padding: 1.25rem;
+
 $zoom-margin: (($sm-breakpoint - ($article-side-padding * 2)) / 2);
 
 // Font Family
@@ -30,6 +32,7 @@ $zoom-margin: (($sm-breakpoint - ($article-side-padding * 2)) / 2);
 body { font-size: 1.125rem }
 a { color: #3498db }
 .section-max-width { max-width: $sm-breakpoint }
+.article-top-padding { padding-top: $article-top-padding }
 .article-side-padding { padding-left: $article-side-padding; padding-right: $article-side-padding }
 
 .post-content img {
@@ -121,6 +124,10 @@ hr {
 
     body {
         font-size: 1.032rem
+    }
+
+    .article-top-padding {
+        padding-top: ($article-top-padding / 2);
     }
 
     .highlight, .sm-fullbleed {
