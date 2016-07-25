@@ -7,13 +7,7 @@ layout: default
   <header class="align-center align-middle color-white text-shadow-medium pt6 pb4 article-side-padding" style="background: linear-gradient( rgba({{ page.color }}, 0.8), rgba({{ page.color }}, 0.8)), url({{ page.cover-image }}); background-size: cover; background-position: center center; min-height: 70vh">
 
       {% include subpage-logo.html %}
-
-      <div onclick="window.history.back()" id="close-post" class="absolute t0 r0 hide line-height-none dim-color-white svg-shadow-medium p3 pointer">
-          <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
-              <title>All Articles</title>
-              <path d="M2 30 L30 2 M30 30 L2 2" />
-          </svg>
-      </div>
+      {% include subpage-close.html %}
 
       <div class="center-block pt5">
         <h1 class="font-size-1 line-height-none py2" itemprop="name headline">{{ page.title }}</h1>

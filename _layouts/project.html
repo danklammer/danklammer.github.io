@@ -7,13 +7,7 @@ layout: default
   <header class="center-block color-white text-shadow-medium box-shadow-light pt5" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0, rgba(0,0,0,0) 8rem), rgb({{ page.color }});">
       
       {% include subpage-logo.html %}
-
-      <div onclick="window.history.back()" id="close-post" class="absolute t0 r0 hide line-height-none dim-color-white svg-shadow-medium p3 pointer">
-          <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
-              <title>All Work</title>
-              <path d="M2 30 L30 2 M30 30 L2 2" />
-          </svg>
-      </div>
+      {% include subpage-close.html %}
 
       <div class="center-block align-center line-height-none text-shadow-medium px3 pt7 pb3">
           <h2 class="font-size-1 pt3">{{ page.title }}</h2>
