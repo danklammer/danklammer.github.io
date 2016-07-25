@@ -4,9 +4,9 @@ layout: default
 
 <article class="site-project lg-post lg-height-full" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="center-block color-white text-shadow-medium box-shadow-light pt5" style="background: rgb({{ page.color }});"">
-
-      <a href="{{ site.baseurl }}/" class="lg-absolute l1 t1 sm-hide font-size-5 inline-block color-white dim-bg-black underline-none lowercase py1 px3 m2 br3">&larr; All Work</a>
+  <header class="center-block color-white text-shadow-medium box-shadow-light pt5" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0, rgba(0,0,0,0) 8rem), rgb({{ page.color }});">
+      
+      {% include subpage-logo.html %}
 
       <div onclick="window.history.back()" id="close-post" class="absolute t0 r0 hide line-height-none dim-color-white svg-shadow-medium p3 pointer">
           <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
@@ -15,14 +15,14 @@ layout: default
           </svg>
       </div>
 
-      <div class="center-block align-center line-height-none px3 pt4 pb3">
-          <h2 class="font-size-1">{{ page.title }}</h2>
+      <div class="center-block align-center line-height-none text-shadow-medium px3 pt7 pb3">
+          <h2 class="font-size-1 pt3">{{ page.title }}</h2>
           <time class="block font-size-6 line-height-title tracking-wide opacity-8 py2">{{ page.year }}</time>
           <span class="font-size-5 line-height-title tracking-slight font-weight-5">{{ page.tagline }}</span>
       </div>
 
       {% if page.cover-image %}
-      <img src="{{ page.cover-image }}" width="450" height="400" class="center-block width-full no-select" style="max-width: 550px">
+      <img src="{{ page.cover-image }}" width="450" height="400" class="center-block width-full no-select" style="max-width: 540px">
       {% endif %}
 
   </header>

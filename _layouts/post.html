@@ -6,19 +6,19 @@ layout: default
 
   <header class="align-center align-middle color-white text-shadow-medium pt6 pb4 article-side-padding" style="background: linear-gradient( rgba({{ page.color }}, 0.8), rgba({{ page.color }}, 0.8)), url({{ page.cover-image }}); background-size: cover; background-position: center center; min-height: 60vh">
 
-      <a href="{{ site.baseurl }}/articles/" class="lg-absolute l1 t1 sm-hide font-size-5 inline-block color-white dim-bg-white underline-none lowercase py1 px3 m2 br3">&larr; All Articles</a>
+      {% include subpage-logo.html %}
 
       <div onclick="window.history.back()" id="close-post" class="absolute t0 r0 hide line-height-none dim-color-white svg-shadow-medium p3 pointer">
           <svg viewBox="0 0 32 32" width="24" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="8%">
-              <title>All Work</title>
+              <title>All Articles</title>
               <path d="M2 30 L30 2 M30 30 L2 2" />
           </svg>
       </div>
 
-      <div class="center-block pt3">
+      <div class="center-block pt5">
         <h1 class="font-size-1 line-height-none py2" itemprop="name headline">{{ page.title }}</h1>
         <h3 class="font-size-3 line-height-title font-weight-3 pt1 px4" itemprop="name alternativeHeadline">{{ page.subtitle }}</h3>
-        <p class="font-size-5 line-height-none pt4 opacity-8"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time>{% if page.author %} <small class="font-size-8 p2">&bull;</small> <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span rel="author" itemprop="name">{{ page.author }}</span></span>{% endif %}</p>
+        <p class="font-size-5 line-height-none pt5 opacity-8"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></p>
       </div>
 
   </header>
