@@ -16,8 +16,10 @@ layout: default
       </div>
 
       {% if page.cover-image %}
-      <img src="{{ page.cover-image }}" width="450" height="400" class="center-block width-full no-select" style="max-width: 500px">
+      <div class="width-full center-block" style="max-width: 600px; height: 90vw; max-height: 400px; background-image: url({{ page.cover-image }}); background-position: center bottom; background-size: auto 100%; background-repeat: no-repeat">
+      </div>
       {% endif %}
+
 
   </header>
 
