@@ -9,7 +9,7 @@ $sm-breakpoint: 36rem;
 $article-top-padding: 1.5rem;
 $article-side-padding: 1.25rem;
 
-$zoom-margin: (($sm-breakpoint - ($article-side-padding * 2)) / 2);
+$zoom-margin: ($sm-breakpoint / 2);
 
 // Font Family
 .font-avenir { font-family: 'Avenir Next', Avenir, 'Helvetica Neue', helvetica, sans-serif }
@@ -31,12 +31,20 @@ $zoom-margin: (($sm-breakpoint - ($article-side-padding * 2)) / 2);
 // Global Properties
 body { font-size: 1.125rem }
 a { color: #3498db }
-.section-max-width { max-width: $sm-breakpoint }
-.article-top-padding { padding-top: $article-top-padding }
-.article-side-padding { padding-left: $article-side-padding; padding-right: $article-side-padding }
 
-.post-content img {
-    border-radius: .25rem;
+.article-top-padding { padding-top: $article-top-padding }
+
+.section-max-width,
+.post-content p,
+.post-content h1,
+.post-content h2,
+.post-content h3,
+.post-content h4 {
+    max-width: $sm-breakpoint;
+    padding-left: $article-side-padding;
+    padding-right: $article-side-padding;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .post-content p + h1,
@@ -88,19 +96,20 @@ hr {
 
 
 // Zoom
-.img-zoom img {
+.img-zoom {
     border-radius: .25rem;
     cursor: pointer;
     width: 100%;
     transition: all 0.4s ease;
 }
 
-.img-zoom.zoom img {
+.img-zoom.zoom {
     width: 100vw;
     max-width: 100vw;
     margin-left: calc(#{$zoom-margin} - 50vw);   
 }
 
+// Code Highlight
 .highlight {
     font-size: small;
     margin: 0;
@@ -117,6 +126,19 @@ hr {
 }
 
 .lg-page .header-tagline { display: none }
+
+
+// Project Gallery
+.project-gallery {
+    width: 100vw;
+    line-height: 0;
+    padding-left: 1px;
+}
+
+.project-gallery img {
+    border-radius: 0;
+    padding: 0 1px 1px 0;
+}
 
 
 // Custom Media Queries
@@ -136,7 +158,7 @@ hr {
         border-radius: 0 !important;
     }
 
-    .img-zoom.zoom img {
+    .img-zoom.zoom {
         margin-left: -$article-side-padding;
     }
 
@@ -148,7 +170,7 @@ hr {
         display: none
     }
 
-    .img-zoom.zoom img {
+    .img-zoom.zoom {
         border-radius: 0
     }
 
@@ -156,7 +178,7 @@ hr {
 
 @media (min-width: $lg-breakpoint) {
 
-    .img-zoom.zoom img {
+    .img-zoom.zoom {
         width: 110vmin;
         max-width: 110vmin;
         margin-left: calc(#{$zoom-margin} - 55vmin);
