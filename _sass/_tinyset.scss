@@ -14,7 +14,7 @@ html {
     box-sizing: border-box;
 }
 
-body {
+body, figure, figcaption {
     margin: 0;
 }
 
@@ -23,11 +23,11 @@ img, svg {
     height: auto;
 }
 
-body, nav, main, section, article, aside, header, footer, div, form, textarea, input, ul, li, a, img, svg {
+body, nav, main, section, article, aside, header, footer, figure, figcaption, div, form, textarea, input, ul, li, a, img, svg {
     box-sizing: inherit
 }
 
-nav, main, section, article, aside, header, footer {
+nav, main, section, article, aside, header, footer, figure, figcaption {
     display: block
 }
 
@@ -205,7 +205,7 @@ i, em, .italic {
 
 
 /* Margins  */
-
+.m0 { margin: 0      }
 .m1 { margin: .25rem }
 .m2 { margin: .5rem  }
 .m3 { margin: 1rem   }
@@ -272,6 +272,7 @@ i, em, .italic {
 
 /* Padding  */
 
+.p0 { padding: 0      }
 .p1 { padding: .25rem }
 .p2 { padding: .5rem  }
 .p3 { padding: 1rem   }
