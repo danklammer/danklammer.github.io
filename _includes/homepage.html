@@ -8,12 +8,14 @@
 
         {% for post in site.categories.work %}<!--
         --><div class="lg-width-50 sm-width-100 inline-block p2">
-          <a class="center-block color-white underline-none line-height-none text-shadow-light box-shadow-light br3 overflow-hidden" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
+          <a class="center-block color-white underline-none line-height-none text-shadow-medium box-shadow-light br3 overflow-hidden" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
 
-            <div class="center-block px3 pt5 pb3">
+            <div class="center-block px3 pt5 pb2">
                 <h2 class="font-size-1">{{ post.title }}</h2>
-                <time class="block font-size-6 line-height-title tracking-wide opacity-8 py2">{{ post.year }}</time>
-                <span class="font-size-5 line-height-title tracking-slight font-weight-5">{{ post.tagline }}</span>
+                <div class="block font-size-5 tracking-slight font-weight-5 py3">{{ post.tagline }}</div>
+                <div class="inline-block font-size-6 font-weight-4 tracking-slight br5 px3 py2 mt1 mb2" style="background: rgba(0,0,0,0.14)">
+                  {{ post.year }} <small class="bullet inline-block-middle opacity-7">&bull;</small> {{ post.role }}
+                </div>
             </div>
 
             {% if post.cover-image %}

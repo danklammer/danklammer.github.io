@@ -3,6 +3,7 @@ layout:         project
 title:          "Flat Pinboard"
 tagline:        "A simple Pinboard.in userstyle"
 year:           2014
+role:           Creator
 color:          "27, 149, 228"
 cover-image:    /img/work/flatpinboard/flatpinboard-cover.jpg
 permalink:      /flat-pinboard/
