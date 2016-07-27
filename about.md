@@ -6,10 +6,10 @@ permalink: /about/
 
 ![This is me!](/img/about/dan-klammer.jpg){:id: .br3 }
 
-### **I'm Dan, a designer &amp; developer from Cleveland, Ohio.**
+### **I’m Dan, a web designer living in Cleveland, Ohio.**
 
-I’ve been designing and building websites and apps for over fifteen years. I am passionate about everything design and the web.
+I’ve been designing and building websites for over fifteen years. I’m passionate about making good design, learning cutting-edge tech, pushing innovation, and improving experiences.
 
-More recently, I co-founded a web startup&mdash;raising over 3 million dollars to build apps for millions of users. From the business decision making, to UX and UI, to product development, I've had my hands in it all.
+More recently, I co-founded a web startup, [Tackk](/tackk), and built web services and apps for millions of users.
 
-My true love is in creating simple, well-designed, super fast products for everyone to enjoy.
+Creating simple, well-designed, fast digital products for the world to use makes me happy. 
