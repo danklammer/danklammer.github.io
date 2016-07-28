@@ -39,7 +39,8 @@ a { color: #3498db }
 .post-content h1,
 .post-content h2,
 .post-content h3,
-.post-content h4 {
+.post-content h4,
+.highlight {
     max-width: $sm-breakpoint;
     padding-left: $article-side-padding;
     padding-right: $article-side-padding;
@@ -114,10 +115,10 @@ hr {
     margin-left: calc(#{$zoom-margin} - 50vw);   
 }
 
+
 // Code Highlight
 .highlight {
     font-size: small;
-    margin: 0;
     padding: .125rem 1.25rem;
     border-radius: .25rem;
     border-left: .25rem solid #3498db;
@@ -182,9 +183,7 @@ hr {
         padding-top: ($article-top-padding / 2);
     }
 
-    .highlight, .sm-fullbleed {
-        margin-left: -$article-side-padding !important;
-        margin-right: -$article-side-padding !important;
+    .highlight {
         border-radius: 0 !important;
     }
 
