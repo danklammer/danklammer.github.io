@@ -18,7 +18,7 @@ layout: default
       </div>
 
       {% if page.hero-image %}
-      <div class="width-full center-block" style="height: 80vw; max-height: 435px; background-image: url({{ page.hero-image }}); background-position: center bottom; background-size: auto 100%; background-repeat: {{ page.hero-repeat }}">
+      <div class="width-full center-block" style="height: 80vw; max-height: 435px; {% if page.hero-maxwidth %}max-width: {{ page.hero-maxwidth }};{% endif %} background-image: url({{ page.hero-image }}); background-size: auto 100%; background-position: {{ page.hero-position }}; background-repeat: {{ page.hero-repeat }}">
       </div>
       {% endif %}
 
