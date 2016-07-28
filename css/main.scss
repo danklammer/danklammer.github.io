@@ -193,6 +193,13 @@ hr {
 
 }
 
+@media (min-width: $sm-breakpoint) {
+
+    .md-width-50 { width: 50% }
+
+}
+
+
 @media (max-width: $lg-breakpoint) {
 
     .site-page .sm-header-tagline {
