@@ -9,7 +9,7 @@ cover-image:    /img/work/flatpinboard/flatpinboard-cover.jpg
 hero-image:     /img/work/flatpinboard/flatpinboard-hero.jpg
 hero-position:  left bottom
 hero-repeat:    no-repeat
-hero-maxwidth:  860px
+hero-maxwidth:  800px
 permalink:      /flat-pinboard/
 ---
 
