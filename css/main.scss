@@ -40,8 +40,7 @@ a { color: #3498db }
 .post-content h2,
 .post-content h3,
 .post-content h4,
-.highlight,
-.highlighter-rouge {
+.highlight {
     max-width: $sm-breakpoint;
     padding-left: $article-side-padding;
     padding-right: $article-side-padding;
@@ -134,7 +133,9 @@ hr {
 }
 
 .highlighter-rouge {
-    padding: 0;
+    font-size: small;
+    padding: 0.25rem;
+    border-radius: .1875rem;
 }
 
 .lg-page .header-tagline { display: none }
