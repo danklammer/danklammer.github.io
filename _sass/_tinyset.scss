@@ -37,7 +37,6 @@ button, input, select, textarea {
     border: none;
     outline: none;
     margin: 0;
-    -webkit-appearance: none;
 }
 
 a {
@@ -435,6 +434,8 @@ i, em, .italic {
     -ms-user-select: none;
     user-select: none;
 }
+
+.appearance-none { -webkit-appearance: none }
 
 
 /* Media Queries */
