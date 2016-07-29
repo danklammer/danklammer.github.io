@@ -20,6 +20,13 @@
   <link rel="apple-touch-icon" href="{{ "/apple-touch-icon.png" | prepend: site.baseurl }}">
   <link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
 
+  {% if page.path contains 'work' %}
+    <style>
+      .post-content a, .color-page { color: rgb({{ page.color }}) }
+      .post-content a.btn { color: #fff; background: rgb({{ page.color }}) }
+    </style>
+  {% endif %}
+
   <script type="text/javascript">
     if ('ontouchstart' in window || navigator.maxTouchPoints) {
       document.getElementsByTagName('html')[0].className += 'touch';
