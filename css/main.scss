@@ -192,6 +192,8 @@ hr {
 
     .highlight {
         border-radius: 0 !important;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
     }
 
     .zoomable.zoom  {
