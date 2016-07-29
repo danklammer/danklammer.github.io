@@ -1,6 +1,6 @@
 <script>
   [].forEach.call(
-    document.querySelectorAll(".img-zoom"), 
+    document.querySelectorAll(".zoomable"), 
     function(e){
         
       e.addEventListener("click", function(zoom){

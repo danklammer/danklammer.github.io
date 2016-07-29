@@ -101,15 +101,15 @@ hr {
 .contact-form textarea:focus { border: 2px solid #3498db }
 
 
-// Zoom
-.img-zoom {
+// Zoomable Images
+.zoomable {
     border-radius: .25rem;
     cursor: pointer;
     width: 100%;
     transition: all 0.4s ease;
 }
 
-.img-zoom.zoom {
+.zoomable.zoom {
     width: 100vw;
     max-width: 100vw;
     margin-left: calc(#{$zoom-margin} - 50vw);   
@@ -187,7 +187,7 @@ hr {
         border-radius: 0 !important;
     }
 
-    .img-zoom.zoom {
+    .zoomable.zoom  {
         margin-left: -$article-side-padding;
     }
 
@@ -206,7 +206,7 @@ hr {
         display: none
     }
 
-    .img-zoom.zoom {
+    .zoomable.zoom {
         border-radius: 0
     }
 
@@ -214,7 +214,7 @@ hr {
 
 @media (min-width: $lg-breakpoint) {
 
-    .img-zoom.zoom {
+    .zoomable.zoom {
         width: 110vmin;
         max-width: 110vmin;
         margin-left: calc(#{$zoom-margin} - 55vmin);
