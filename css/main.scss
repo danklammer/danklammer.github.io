@@ -200,6 +200,10 @@ hr {
         margin-left: -$article-side-padding;
     }
 
+    .sm-br0 {
+        border-radius: 0 !important;
+    }
+
 }
 
 @media (min-width: $sm-breakpoint) {
