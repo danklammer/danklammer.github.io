@@ -6,9 +6,8 @@
   <div class="p2">
     <section class="width-full center-block align-center pb3">
 
-        {% for post in site.categories.work %}<!--
-        --><div class="md-width-50 inline-block p2">
-          <a class="center-block color-white underline-none line-height-none text-shadow-medium box-shadow-medium br3 overflow-hidden" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}" >
+        {% for post in site.categories.work %}<div class="md-width-50 inline-block p2">
+          <a class="center-block color-white underline-none line-height-none text-shadow-medium box-shadow-medium br3 overflow-hidden" style="background: rgb({{ post.color }});" href="{{ post.url | prepend: site.baseurl }}">
 
             <div class="center-block px3 pt5 pb2">
                 <h2 class="font-size-2">{{ post.title }}</h2>
@@ -23,8 +22,7 @@
             {% endif %}
 
           </a>
-        </div><!--
-        -->{% endfor %}
+        </div>{% endfor %}
 
         {% include layout/copyright.html %}
 
@@ -34,7 +32,4 @@
 
 </div>
 
-
-<script>
-  sessionStorage.setItem("via", "home");
-</script>
+<script>sessionStorage.setItem("via", "home");</script>
