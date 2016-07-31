@@ -6,8 +6,8 @@ layout: default
 
   <header class="center-block color-white text-shadow-medium box-shadow-light pt5 overflow-hidden" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2) 0, rgba(0,0,0,0) 8rem), rgb({{ page.color }});">
       
-      {% include subpage-logo.html %}
-      {% include subpage-close.html %}
+      {% include layout/subpage-logo.html %}
+      {% include layout/subpage-close.html %}
 
       <div class="center-block align-center line-height-none px3 pt7 pb3">
           <h1 class="font-size-1">{{ page.title }}</h1>
@@ -22,7 +22,6 @@ layout: default
       </div>
       {% endif %}
 
-
   </header>
 
   <section class="width-full article-top-padding pb7">
@@ -35,12 +34,9 @@ layout: default
 
 </article>
 
-{% include footer.html %}
-{% include zoomable.js %}
-{% include photoswipe.html %}
+{% include layout/footer.html %}
 
 <script>
-  console.log("from = " + sessionStorage.getItem("via"));
   if (sessionStorage.getItem("via") == "home") {
     document.getElementById("close-post").setAttribute("onclick", "window.history.back(); return false;");
   }

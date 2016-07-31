@@ -28,3 +28,6 @@ Right now the theme is only optimized for Chrome, and you will need the [Stylish
 
 [Pinboard.in]: https://pinboard.in/
 [Stylish Chrome Extension]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
+
+
+{% include modules/plugin-zoomable.html %}
