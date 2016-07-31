@@ -18,9 +18,6 @@
   /* create separate layer, to avoid paint on window.onscroll in webkit/blink */
   -webkit-backface-visibility: hidden;
   outline: none; }
-  .pswp * {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
   .pswp img {
     max-width: none; }
 
@@ -222,24 +219,6 @@
 .pswp__ui--over-close .pswp__button--close {
   opacity: 1; }
 
-.pswp__button,
-.pswp__button--arrow--left:before,
-.pswp__button--arrow--right:before {
-  background: url(/js/photoswipe/default-skin.png) 0 0 no-repeat;
-  background-size: 264px 88px;
-  width: 44px;
-  height: 44px; }
-
-@media (-webkit-min-device-pixel-ratio: 1.1), (-webkit-min-device-pixel-ratio: 1.09375), (min-resolution: 105dpi), (min-resolution: 1.1dppx) {
-  /* Serve SVG sprite if browser supports SVG and resolution is more than 105dpi */
-  .pswp--svg .pswp__button,
-  .pswp--svg .pswp__button--arrow--left:before,
-  .pswp--svg .pswp__button--arrow--right:before {
-    background-image: url(/js/photoswipe/default-skin.svg); }
-  .pswp--svg .pswp__button--arrow--left,
-  .pswp--svg .pswp__button--arrow--right {
-    background: none; } }
-
 .pswp__button--close {
   background-position: 0 -44px; }
 
@@ -289,22 +268,6 @@
 .pswp__button--arrow--right {
   right: 0; }
 
-.pswp__button--arrow--left:before,
-.pswp__button--arrow--right:before {
-  content: '';
-  top: 35px;
-  background-color: rgba(0, 0, 0, 0.3);
-  height: 30px;
-  width: 32px;
-  position: absolute; }
-
-.pswp__button--arrow--left:before {
-  left: 6px;
-  background-position: -138px -44px; }
-
-.pswp__button--arrow--right:before {
-  right: 6px;
-  background-position: -94px -44px; }
 
 /*
 

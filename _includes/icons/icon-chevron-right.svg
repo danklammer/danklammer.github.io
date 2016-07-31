@@ -1,0 +1,3 @@
+<svg viewBox="0 0 32 32" fill="none" stroke="currentcolor" stroke-linecap="round" stroke-linejoin="round" stroke-width="{{ include.stroke-width }}" width="{{ include.width }}" class="{{ include.class }}" aria-hidden="true">
+  <path d="M12 30 L24 16 12 2" />
+</svg>

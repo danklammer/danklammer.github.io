@@ -1,7 +1,7 @@
 
 <!-- Core JS file -->
 <script src="/js/photoswipe.min.js"></script> 
-<script src="/js/photoswipe-gallery.js"></script>
+<script src="/js/photoswipe-gallery.min.js"></script>
 
 
 <!-- Root element of PhotoSwipe. Must have class pswp. -->
@@ -32,7 +32,9 @@
 
                 <div class="pswp__counter"></div>
 
-                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--close svg-shadow-dark" title="Close (Esc)">
+                    {% include icons/icon-close.svg width="38" stroke-width="8%" class="color-white mt2 mr2 p2 pointerevents-none" %}
+                </button>
 
                 <button class="pswp__button pswp__button--share" title="Share"></button>
 
@@ -55,10 +57,12 @@
                 <div class="pswp__share-tooltip"></div> 
             </div>
 
-            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            <button class="pswp__button pswp__button--arrow--left svg-shadow-dark" title="Previous (arrow left)">
+                {% include icons/icon-chevron-left.svg width="52" stroke-width="8%" class="color-white p2 pointerevents-none" %}
             </button>
 
-            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            <button class="pswp__button pswp__button--arrow--right svg-shadow-dark" title="Next (arrow right)">
+                {% include icons/icon-chevron-right.svg width="52" stroke-width="8%" class="color-white p2 pointerevents-none" %}
             </button>
 
             <div class="pswp__caption align-center">
