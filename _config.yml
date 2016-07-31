@@ -22,3 +22,8 @@ exclude: ["node_modules", "README", "README.md", bower.json", ".travis.yml", ".g
 markdown: kramdown
 sass:
   style: compressed
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all
+  blanklines: false
