@@ -48,6 +48,13 @@ a { color: #3498db }
     margin-right: auto;
 }
 
+.post-content h1:first-child,
+.post-content h2:first-child,
+.post-content h3:first-child,
+.post-content h4:first-child {
+    margin-top: 1.5rem;
+}
+
 .post-content p + h1,
 .post-content p + h2,
 .post-content p + h3,
