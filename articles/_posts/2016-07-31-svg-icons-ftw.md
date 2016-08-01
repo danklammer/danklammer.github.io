@@ -1,7 +1,7 @@
 ---
 layout:         post
 title:          "SVG Icons FTW!"
-subtitle:       "What I learned from creating an SVG line iconset"
+subtitle:       "What I learned from creating an SVG iconset"
 date:           2016-07-31
 author:         Dan Klammer
 color:          "77, 87, 114"
