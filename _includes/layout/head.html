@@ -7,6 +7,7 @@
   <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ page.description }}{% endif %}">
   <meta name="author" content="{{ site.title }}">
 
+  <meta property="og:url" content="{{ page.url | prepend: site.url }}" />
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="{{ site.title }}">
   <meta property="og:title" content="{% if page.title %}{{ page.title | escape }} &mdash; {% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.title }}{% endif %}{% else %}{{ site.title | escape }} &mdash; {{ site.description }}{% endif %}">
