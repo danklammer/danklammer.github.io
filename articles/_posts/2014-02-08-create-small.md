@@ -5,7 +5,7 @@ subtitle:       "Tackling big design problems with little space"
 date:           2014-02-08
 author:         Dan Klammer
 color:          "40, 43, 49"
-cover-image:    /img/articles/2014-02-08-create-small/create-small-cover.jpg
+hero-image:     /img/articles/2014-02-08-create-small/create-small-hero.jpg
 permalink:      /articles/create-small/
 ---
 

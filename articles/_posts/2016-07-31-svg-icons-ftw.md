@@ -5,7 +5,7 @@ subtitle:       "What I learned from creating an SVG line iconset"
 date:           2016-07-31
 author:         Dan Klammer
 color:          "77, 87, 114"
-cover-image:    /img/articles/2016-07-31-svg-icons-ftw/svg-icons-ftw-cover.png
+hero-image:     /img/articles/2016-07-31-svg-icons-ftw/svg-icons-ftw-hero.png
 permalink:      /articles/svg-icons-ftw/
 ---
 
