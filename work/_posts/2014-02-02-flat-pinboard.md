@@ -1,7 +1,7 @@
 ---
 layout:         project
 title:          "Flat Pinboard"
-subtitle:       "A simple Pinboard.in userstyle"
+subtitle:       "Simple Pinboard userstyle"
 year:           2014
 role:           Creator
 color:          "27, 149, 228"
