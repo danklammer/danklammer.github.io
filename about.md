@@ -1,6 +1,7 @@
 ---
 layout: page
 title: About
+description: I’m Dan, a web designer living in Cleveland, Ohio. Creating simple, well-designed, fast digital products for the world to use makes me happy. 
 permalink: /about/
 ---
 

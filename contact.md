@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Contact
+description: Need help on your next project? Feel free to each out to me on Twitter or via the contact form.
 permalink: /contact/
 ---
 
