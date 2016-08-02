@@ -7,7 +7,7 @@ role:           Creator
 color:          "27, 149, 228"
 cover-image:    /img/work/flatpinboard/flatpinboard-cover.jpg
 hero-image:     /img/work/flatpinboard/flatpinboard-hero.jpg
-hero-position:  left bottom
+hero-position:  left
 hero-repeat:    no-repeat
 hero-maxwidth:  800px
 permalink:      /flat-pinboard/
