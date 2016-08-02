@@ -6,7 +6,7 @@
 //Variables
 $lg-breakpoint: 60rem;
 $sm-breakpoint: 36rem;
-$article-top-padding: 1.5rem;
+$article-top-padding: 1.75rem;
 $article-side-padding: 1.25rem;
 
 $zoom-margin: ($sm-breakpoint / 2);
@@ -52,7 +52,7 @@ a { color: #3498db }
 .post-content h2:first-child,
 .post-content h3:first-child,
 .post-content h4:first-child {
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
 }
 
 .post-content p + h1,
