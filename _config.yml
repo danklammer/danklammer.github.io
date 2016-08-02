@@ -24,6 +24,6 @@ sass:
   style: compressed
 compress_html:
   clippings: all
-  comments: ["<!-- ", " -->"]
+  comments: ["/* ", " */"]
   endings: all
   blanklines: false

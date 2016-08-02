@@ -7,6 +7,8 @@ author:         Dan Klammer
 color:          "77, 87, 114"
 hero-image:     /img/articles/2016-07-31-svg-icons-ftw/svg-icons-ftw-hero.png
 permalink:      /articles/svg-icons-ftw/
+modulejs:
+    - modules/bytesize-demo.js
 ---
 
 All 75+ icons measure in at 9KB minified (2KB in SVGZ). Each icon is hand-coded along a 32x32 grid and uses stroke to allow for maximum style flexibility. Since these icons are using strictly `stroke`, you can adjust the weight (stroke-width), color, size, and if you want the edges to be round or square.

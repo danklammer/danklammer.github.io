@@ -11,6 +11,8 @@ hero-position:  left bottom
 hero-repeat:    no-repeat
 hero-maxwidth:  800px
 permalink:      /flat-pinboard/
+modulejs:
+    - modules/plugin-zoomable.js
 ---
 
 #### **Friendlier anti-social bookmarking**
@@ -30,6 +32,3 @@ Right now the theme is only optimized for Chrome, and you will need the [Stylish
 
 [Pinboard.in]: https://pinboard.in/
 [Stylish Chrome Extension]: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe
-
-
-{% include modules/plugin-zoomable.html %}

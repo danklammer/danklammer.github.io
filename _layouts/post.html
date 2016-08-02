@@ -33,4 +33,6 @@ layout: default
   if (sessionStorage.getItem("via") == "articles") {
     document.getElementById("close-post").setAttribute("onclick", "window.history.back(); return false;");
   }
+
+  {% include layout/scripts.js %}
 </script>

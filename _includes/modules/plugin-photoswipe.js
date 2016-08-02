@@ -1,7 +1,9 @@
+/* photoswipe.js gallery */
+
 var initPhotoSwipeFromDOM = function(gallerySelector) {
 
-    // parse slide data (url, title, size ...) from DOM elements 
-    // (children of gallerySelector)
+    /* parse slide data (url, title, size ...) from DOM elements */
+    /* (children of gallerySelector) */
     var parseThumbnailElements = function(el) {
         var thumbElements = el.childNodes,
             numNodes = thumbElements.length,
@@ -13,18 +15,18 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         for(var i = 0; i < numNodes; i++) {
 
-            figureEl = thumbElements[i]; // <figure> element
+            figureEl = thumbElements[i]; /* <figure> element */
 
-            // include only element nodes 
+            /* include only element nodes */
             if(figureEl.nodeType !== 1) {
                 continue;
             }
 
-            linkEl = figureEl.children[0]; // <a> element
+            linkEl = figureEl.children[0]; /* <a> element */
 
             size = linkEl.getAttribute('data-size').split('x');
 
-            // create slide object
+            /* create slide object */
               if ( linkEl.getAttribute('data-type') == 'video') {
                 item = {
                   html: linkEl.getAttribute('data-video')
@@ -38,35 +40,35 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
               }
 
             if(figureEl.children.length > 1) {
-                // <figcaption> content
+                /* <figcaption> content */
                 item.title = figureEl.children[1].innerHTML; 
             }
 
             if(linkEl.children.length > 0) {
-                // <img> thumbnail element, retrieving thumbnail url
+                /* <img> thumbnail element, retrieving thumbnail url */
                 item.msrc = linkEl.children[0].getAttribute('src');
             } 
 
-            item.el = figureEl; // save link to element for getThumbBoundsFn
+            item.el = figureEl; /* save link to element for getThumbBoundsFn */
             items.push(item);
         }
 
         return items;
     };
 
-    // find nearest parent element
+    /* find nearest parent element */
     var closest = function closest(el, fn) {
         return el && ( fn(el) ? el : closest(el.parentNode, fn) );
     };
 
-    // triggers when user clicks on thumbnail
+    /* triggers when user clicks on thumbnail */
     var onThumbnailsClick = function(e) {
         e = e || window.event;
         e.preventDefault ? e.preventDefault() : e.returnValue = false;
 
         var eTarget = e.target || e.srcElement;
 
-        // find root element of slide
+        /* find root element of slide */
         var clickedListItem = closest(eTarget, function(el) {
             return (el.tagName && el.tagName.toUpperCase() === 'FIGURE');
         });
@@ -75,8 +77,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             return;
         }
 
-        // find index of clicked item by looping through all child nodes
-        // alternatively, you may define index via data- attribute
+        /* find index of clicked item by looping through all child nodes */
+        /* alternatively, you may define index via data- attribute */
         var clickedGallery = clickedListItem.parentNode,
             childNodes = clickedListItem.parentNode.childNodes,
             numChildNodes = childNodes.length,
@@ -96,7 +98,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
         }
 
         if(index >= 0) {
-            // open PhotoSwipe if valid index found
+            /* open PhotoSwipe if valid index found */
             openPhotoSwipe( index, clickedGallery );
         }
         return false;
@@ -110,7 +112,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         items = parseThumbnailElements(galleryElement);
 
-        // define options (if needed)
+        /* define options (if needed) */
         options = {
 
             maxSpreadZoom: 1,
@@ -131,8 +133,8 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             },
 
             getThumbBoundsFn: function(index) {
-                // See Options -> getThumbBoundsFn section of documentation for more info
-                var thumbnail = items[index].el.getElementsByTagName('img')[0], // find thumbnail
+                /* See Options -> getThumbBoundsFn section of documentation for more info */
+                var thumbnail = items[index].el.getElementsByTagName('img')[0], /* find thumbnail */
                     pageYScroll = window.pageYOffset || document.documentElement.scrollTop,
                     rect = thumbnail.getBoundingClientRect(); 
 
@@ -143,7 +145,7 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         options.index = parseInt(index, 10);
 
-        // exit if index not found
+        /* exit if index not found */
         if( isNaN(options.index) ) {
             return;
         }
@@ -152,14 +154,14 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
             options.showAnimationDuration = 0;
         }
 
-        // Pass data to PhotoSwipe and initialize it
+        /* Pass data to PhotoSwipe and initialize it */
         gallery = new PhotoSwipe( pswpElement, PhotoSwipeUI_Default, items, options);
 
         gallery.init();
 
     };
 
-    // loop through all gallery elements and bind events
+    /* loop through all gallery elements and bind events */
     var galleryElements = document.querySelectorAll( gallerySelector );
 
     for(var i = 0, l = galleryElements.length; i < l; i++) {
@@ -169,5 +171,5 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
 };
 
-// execute above function
+/* execute above function */
 initPhotoSwipeFromDOM('.project-gallery');
