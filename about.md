@@ -27,11 +27,11 @@ This page loaded for you in {% include modules/plugin-loadtime.html %} seconds. 
  - Styled with [Tinyset]
  - Iconified with [Bytesize Icons]
  - Crammed with [Jekyll Compress]
- - Image squeezed with [ImgOptium]
+ - Image squeezed with [ImageOptim]
 
 [Jekyll]: https://jekyllrb.com/
 [GitHub Pages]: https://pages.github.com/
 [Tinyset]: https://github.com/danklammer/tinyset
 [Bytesize Icons]: /bytesize-icons/
 [Jekyll Compress]: http://jch.penibelst.de/
-[ImgOptium]: https://imageoptim.com/
+[ImageOptim]: https://imageoptim.com/
