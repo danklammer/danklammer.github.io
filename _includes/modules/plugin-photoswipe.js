@@ -159,6 +159,20 @@ var initPhotoSwipeFromDOM = function(gallerySelector) {
 
         gallery.init();
 
+        /* pause video on close */
+        gallery.listen('close', function() {
+            if(document.getElementById("gallery-video")){
+                document.getElementById("gallery-video").pause();
+            }
+        });
+
+        /* pause video on change */
+        gallery.listen('beforeChange', function() {
+            if(document.getElementById("gallery-video")){
+                document.getElementById("gallery-video").pause();
+            }
+        });
+
     };
 
     /* loop through all gallery elements and bind events */
