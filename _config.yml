@@ -12,10 +12,11 @@ description: Designer & Developer from Cleveland, Ohio
 tagline: Passionate about creating digital products—obsessed with simplicity & experience.
 url: "http://danklammer.com"
 production_url: http://danklammer.com
-splash: true
-twitter_username: danklammer
-github_username:  danklammer
 contact_email: mailman@danklammer.com
+
+# Splash page & drafts
+splash: true
+show_drafts: false
 
 # Build settings
 exclude: ["node_modules", "README", "README.md", bower.json", ".travis.yml", ".gitignore", ".gitattributes", ".gitmodules", "LICENSE", "CHANGELOG.md", "Gemfile", "Gemfile.lock"]
