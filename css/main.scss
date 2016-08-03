@@ -157,6 +157,7 @@ hr {
     cursor: pointer;
     width: 100%;
     transition: all 0.4s ease;
+    -ms-transition: none !important; //IE is dumb
 }
 
 .zoomable.zoom {
