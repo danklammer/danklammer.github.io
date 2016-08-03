@@ -15,9 +15,9 @@ getLocation(insertLocation);
 
         e.addEventListener('input', function(){
             if (this.value) {
-                this.parentNode.classList.add('filled');
+                this.parentNode.setAttribute('data-filled', 'true');
             } else {
-                this.parentNode.classList.remove('filled');
+                this.parentNode.setAttribute('data-filled', 'false');
             }
         });
 
