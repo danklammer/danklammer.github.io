@@ -111,7 +111,7 @@ i, em, .italic {
 
 .fit { max-width: 100% }
 .width-full { width: 100% }
-.height-full { min-height: 100vh }
+.height-full { height: 100vh }
 
 .left  { float: left }
 .right { float: right }
@@ -449,7 +449,7 @@ i, em, .italic {
 @media (max-width: $lg-breakpoint) {
 
     .sm-width-100 { width: 100% }
-    .sm-height-full { min-height: 100vh }
+    .sm-height-full { height: 100vh }
 
     .sm-width-33  { width: 33.33% }
     .sm-width-66  { width: 66.66% }
@@ -481,7 +481,7 @@ i, em, .italic {
 @media (min-width: $lg-breakpoint) {
 
     .lg-width-100 { width: 100% }
-    .lg-height-full { min-height: 100vh }
+    .lg-height-full { height: 100vh }
 
     .lg-width-33  { width: 33.33% }
     .lg-width-66  { width: 66.66% }
