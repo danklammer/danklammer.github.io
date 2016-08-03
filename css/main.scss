@@ -144,11 +144,11 @@ hr {
 
 
 // Contact Form
-.contact-form input,
-.contact-form textarea { border: 2px solid #ddd }
-
-.contact-form input:focus,
-.contact-form textarea:focus { border: 2px solid #3498db }
+.contact-field { border: 2px solid #ddd; transition: all 0.3s ease }
+.contact-field:focus { border: 2px solid #3498db }
+.contact-label { transition: all 0.3s ease }
+.filled .contact-field { padding-top: 1.5rem; padding-bottom: 0.5rem }
+.filled .contact-label { opacity: 1 }
 
 
 // Zoomable Images

@@ -10,6 +10,23 @@ function insertLocation(ip) {
 getLocation(insertLocation);
 
 var passName = function(subjectName){
+    if (this.subjectName == '') return;
     var contactSubject = document.getElementById("contact-subject");
     contactSubject.value = "DK Form - " + subjectName;
 };
+
+
+[].forEach.call(
+  document.querySelectorAll(".contact-field"), 
+    function(e){
+
+        e.addEventListener('input', function(){
+            if (this.value) {
+                this.parentNode.classList.add('filled');
+            } else {
+                this.parentNode.classList.remove('filled');
+            }
+        });
+
+    }
+);
