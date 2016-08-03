@@ -15,7 +15,7 @@ production_url: http://danklammer.com
 contact_email: mailman@danklammer.com
 
 # Splash page & drafts
-show_splash: true
+show_splash: false
 show_drafts: false
 
 # Build settings
