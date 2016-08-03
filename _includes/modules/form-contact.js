@@ -9,12 +9,6 @@ function insertLocation(ip) {
 
 getLocation(insertLocation);
 
-var passName = function(subjectName){
-    if (this.subjectName == '') return;
-    var contactSubject = document.getElementById("contact-subject");
-    contactSubject.value = "DK Form - " + subjectName;
-};
-
 
 [].forEach.call(
   document.querySelectorAll(".contact-field"), 
@@ -30,3 +24,8 @@ var passName = function(subjectName){
 
     }
 );
+
+var passName = function(subjectName){
+    var contactSubject = document.getElementById("contact-subject");
+    contactSubject.value = "DK Form - " + subjectName.value;
+};
