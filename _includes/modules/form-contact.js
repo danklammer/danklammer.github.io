@@ -25,7 +25,8 @@ getLocation(insertLocation);
     }
 );
 
-var passName = function(subjectName){
+var passName = function(){
+    var contactName = document.getElementById("contact-name");
     var contactSubject = document.getElementById("contact-subject");
-    contactSubject.value = "DK Form - " + subjectName.value;
+    contactSubject.value = "DK Form - " + contactName.value;
 };
