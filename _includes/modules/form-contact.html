@@ -2,15 +2,15 @@
     
     <div class="inline-block width-full lg-width-50 p2 relative">
         <label class="contact-label font-size-7 bold color-blue absolute t1 l3 pt2 opacity-0 pointerevents-none">Your name</label>
-        <input type="text" id="contact-name" name="name" placeholder="Your name" onBlur="passName(this.value);" class="contact-field width-full px2 py3 br3 appearance-none" tabindex="1" value="" required>
+        <input type="text" id="contact-name" name="name" placeholder="Your name" onblur="document.getElementById('contact-subject').value = 'DK Form - ' + this.value;" class="contact-field width-full px2 py3 br3 appearance-none" tabindex="1" required>
 
     </div><div class="inline-block width-full lg-width-50 p2 relative">
         <label class="contact-label font-size-7 bold color-blue absolute t1 l3 pt2 opacity-0 pointerevents-none">Your email</label>
-        <input type="email" id="contact-email" name="_replyto" placeholder="Your email" class="contact-field width-full px2 py3 br3 appearance-none" tabindex="2" value="" required>
+        <input type="email" id="contact-email" name="_replyto" placeholder="Your email" class="contact-field width-full px2 py3 br3 appearance-none" tabindex="2" required>
 
     </div><div class="inline-block width-full p2 relative">
         <label class="contact-label font-size-7 bold color-blue absolute t1 l3 pt2 opacity-0 pointerevents-none">Your message</label>
-        <textarea name="message" id="contact-message" rows="6" cols="50" placeholder="Your message" class="contact-field width-full px2 py3 br3 appearance-none" style="resize:none" tabindex="3" value="" required></textarea>
+        <textarea name="message" id="contact-message" rows="6" cols="50" placeholder="Your message" class="contact-field width-full px2 py3 br3 appearance-none" style="resize:none" tabindex="3" required></textarea>
 
     </div>
 

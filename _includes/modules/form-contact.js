@@ -23,8 +23,3 @@ getLocation(insertLocation);
 
     }
 );
-
-var passName = function(subjectName){
-    var contactSubject = document.getElementById("contact-subject");
-    contactSubject.value = "DK Form - " + subjectName;
-};
