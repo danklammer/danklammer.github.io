@@ -147,8 +147,8 @@ hr {
 .contact-field { border: 2px solid #ddd; transition: all 0.3s ease }
 .contact-field:focus { border: 2px solid #3498db }
 .contact-label { transition: all 0.3s ease }
-[data-filled="true"] .contact-field { padding-top: 1.5rem; padding-bottom: 0.5rem }
-[data-filled="true"] .contact-label { opacity: 1 }
+.filled .contact-field { padding-top: 1.5rem; padding-bottom: 0.5rem }
+.filled .contact-label { opacity: 1 }
 
 
 // Zoomable Images
