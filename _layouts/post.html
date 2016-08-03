@@ -4,12 +4,12 @@ layout: default
 
 <article class="site-post lg-post lg-height-full" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="align-center align-middle color-white text-shadow-medium pt6 pb4 article-side-padding" style="background: linear-gradient( rgba({{ page.color }}, 0.8), rgba({{ page.color }}, 0.8)), url({{ page.hero-image }}); background-size: cover; background-position: center center; min-height: 70vh">
+  <header class="align-center table width-full color-white text-shadow-medium pt6 pb4 article-side-padding" style="background: linear-gradient( rgba({{ page.color }}, 0.8), rgba({{ page.color }}, 0.8)), url({{ page.hero-image }}); background-size: cover; background-position: center center; min-height: 70vh">
 
       {% include layout/subpage-logo.html %}
       {% include layout/subpage-close.html %}
 
-      <div class="center-block pt5">
+      <div class="table-cell-middle pt5">
         <h1 class="font-size-1 line-height-none py2" itemprop="name headline">{{ page.title }}</h1>
         <h3 class="font-size-3 font-weight-3 line-height-slight pt2 px2" itemprop="name alternativeHeadline">{{ page.subtitle }}</h3>
         <p class="font-size-5 line-height-none pt5 opacity-8"><time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">{{ page.date | date: "%B %-d, %Y" }}</time></p>
