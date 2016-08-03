@@ -18,9 +18,13 @@ body, figure, figcaption {
     margin: 0;
 }
 
-img, svg {
+img {
     max-width: 100%;
     height: auto;
+}
+
+svg {
+    max-width: 100%;
 }
 
 body, nav, main, section, article, aside, header, footer, figure, figcaption, div, form, textarea, input, ul, li, a, img, svg {
