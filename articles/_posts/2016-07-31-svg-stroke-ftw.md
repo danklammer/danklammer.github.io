@@ -38,9 +38,9 @@ I ended up creating 75+ line icons using strictly `stroke` to define the shape. 
 
 One of the bigger caveats is the antialiasing, especially for screens without subpixels. If you want to pixel-hint as much as possible, I recommend using `stroke-width` increments of 0.5px or 1.5625%. Regardless of what size you set the `stroke-width`, I recommend using `overflow: visible` incase the linecap edge falls just outside the `viewBox`.
 
-By nature line icons are not meant to be tiny. I recommend not going any smaller than 24px in width.
+By nature line icons are not meant to be tiny. I recommend not going any smaller than 24px in width/height.
 
-While you do miss out on caching when using these icons inline, but since they have such a small footprint I believe it's ok for them to be loaded with the HTML each time. Some people may disagree, but it really comes down to what kind of site you have and how many icons you plan to use. If you do want to make sure you utilize the cache, you are able to link the SVG externally and then render the icon with SVG `use`. You can learn more about the `use` tag on [CSS-Tricks].
+While you do miss out on caching when using these icons inline, but since they have such a small footprint I believe it's ok for them to be loaded with the HTML each time. Some people may disagree, but it really comes down to what kind of site you have and how many icons you plan to use. If you do want to utilize the cache, you are able to link the SVG externally and then render the icon with SVG `use`. You can learn more about the `use` tag on [CSS-Tricks].
 
 
 #### **Give it a spin**
