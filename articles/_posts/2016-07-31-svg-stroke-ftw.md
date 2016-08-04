@@ -40,7 +40,7 @@ One of the bigger caveats is the antialiasing, especially for screens without su
 
 By nature line icons are not meant to be tiny. I recommend not going any smaller than 24px in width/height.
 
-While you do miss out on caching when using these icons inline, but since they have such a small footprint I believe it's ok for them to be loaded with the HTML each time. Some people may disagree, but it really comes down to what kind of site you have and how many icons you plan to use. If you do want to utilize the cache, you are able to link the SVG externally and then render the icon with SVG `use`. You can learn more about the `use` tag on [CSS-Tricks].
+You do miss out on caching when using these icons inline, but since they have such a small footprint I believe it's ok for them to be loaded with the HTML each time. Some people may disagree, but it really comes down to what kind of site you have and how many icons you plan to use. If you do want to utilize the cache, you are able to link the SVG externally and then render the icon with SVG `use`. You can learn more about the `use` tag on [CSS-Tricks].
 
 
 #### **Give it a spin**
