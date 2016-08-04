@@ -36,7 +36,7 @@ I ended up creating 75+ line icons using strictly `stroke` to define the shape. 
 
 <h4 class="pt6"><strong>There are a few caveats</strong></h4>
 
-One of the bigger caveats is the antialiasing, especially for screens without subpixels. If you want to pixel-hint as much as possible, I recommend using `stroke-width` increments of 0.5px or 1.5625%. Each icon has a 2 point margin, so you can have a maximum stroke of 4px without going outside the `viewBox`. Regardless of what size you set the `stroke-width`, I recommend using `overflow: visible` incase the linecap edge falls just outside the `viewBox`.
+One of the bigger caveats is the antialiasing, especially for screens without subpixels. If you want to pixel-hint as much as possible, I recommend using `stroke-width` increments of 0.5px or 1.5625%. Regardless of what size you set the `stroke-width`, I recommend using `overflow: visible` incase the linecap edge falls just outside the `viewBox`.
 
 By nature line icons are not meant to be tiny. I recommend not going any smaller than 24px in width.
 
