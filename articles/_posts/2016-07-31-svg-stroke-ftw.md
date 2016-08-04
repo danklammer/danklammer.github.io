@@ -11,13 +11,13 @@ modulejs:
     - modules/bytesize-demo.js
 ---
 
-In the last year or so, I took on a project to [learn the intricacies of SVG], more specifically SVG `paths` and hand-coding them. I was inspired by the idea when I saw [Brent Jackson]'s [Geomicons], an minimal iconset built from the ground up for performance.
+In the last year or so, I took on a project to [learn the intricacies of SVG], more specifically SVG `paths` and hand-coding them. I was inspired by the idea when I saw [Brent Jackson]'s [Geomicons], a minimal iconset built from the ground up for performance.
 
 It's great, I can drop these few readable lines of code in my document, shave off a request, easily adjust the color and size with a single attribute or class, and modify any of these properties since they are accessible through the DOM. The flexibility is fantastic!
 
 After experimenting more, I learned SVG `stroke` is another property definitely worth utilizing... and perfect for line icons. Not only can you limit the amount of points on a path without having to outline a shape, you can simply change the weight with `stroke-width` as well as the shape of the line caps and the line joins with `stroke-linecap` and `stroke-linejoin`. 
 
-I ended up creating 75+ line icons using strictly `stroke` to define the shape. Each icon is hand-coded along a 32x32 grid with a 2 point margin allowing for a maximum of 4px (or 12.5%) `stroke-width`. 4px seems small but it's relative to the 32x32 grid. I tried to place as few points as possible to keep the shapes simple but also to reduce on file size. Here is an example of the *Message* icon.
+I ended up creating 75+ line icons using strictly `stroke` to define the shape. Each icon is hand-coded along a 32x32 grid with a 2 point margin allowing for a maximum of 4px (or 12.5%) `stroke-width`. 4px seems small but it's relative to the 32x32 grid. I tried to place as few points as possible to keep the shapes simple but also to reduce on file size.
 
 <div class="align-center p2">
     <svg viewBox="0 0 32 32" width="128" height="128" fill="none">
