@@ -8,6 +8,8 @@ color:          "77, 87, 114"
 color-alpha:    "0.8"
 hero-image:     /img/articles/2016-08-04-svg-stroke-ftw/svg-stroke-ftw-hero.png
 permalink:      /articles/svg-stroke-ftw/
+modulecss:
+    - modules/bytesize-demo.css
 modulejs:
     - modules/bytesize-demo.js
 ---

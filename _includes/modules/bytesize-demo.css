@@ -1,0 +1,32 @@
+.icons {
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+    stroke-width: 5%;
+    color: #3498db;
+}
+
+.bs-icon {
+    display: inline-block;
+    fill: none;
+    margin: 0.2em;
+    font-size: 1em;
+    width: 1em;
+    stroke: currentColor;
+    stroke-width: inherit;
+    stroke-linecap: inherit;
+    stroke-linejoin: inherit;
+    overflow: visible;
+}
+
+#icons.round {
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.icon-controller {
+    max-width: 36rem;
+}
+
+input[type=range] {
+    width: 100%;
+}
