@@ -5,6 +5,7 @@ subtitle:       "The flexibility of using SVG stroke for web icons"
 date:           2016-08-04
 author:         Dan Klammer
 color:          "77, 87, 114"
+color-alpha:    "0.8"
 hero-image:     /img/articles/2016-08-04-svg-stroke-ftw/svg-stroke-ftw-hero.png
 permalink:      /articles/svg-stroke-ftw/
 modulejs:
@@ -17,7 +18,7 @@ It's great, I can drop these few readable lines of code in my document, shave of
 
 After experimenting more, I learned SVG `stroke` is another property definitely worth utilizing... and perfect for line icons. Not only can you limit the amount of points on a path without having to outline a shape, you can simply change the weight with `stroke-width` as well as the shape of the line caps and the line joins with `stroke-linecap` and `stroke-linejoin`. 
 
-I ended up creating 75+ line icons using strictly `stroke` to define the shape. Each icon is hand-coded along a 32x32 grid with a 2 point margin allowing for a maximum of 4px (or 12.5%) `stroke-width`. 4px seems small but it's relative to the 32x32 grid. I tried to place as few points as possible to keep the shapes simple but also to reduce on file size. All icons measure in at a total of 9KB minified (2KB in SVGZ, or Gzipped).
+I ended up creating 75+ line icons using strictly `stroke` to define the shape. Each icon is hand-coded along a 32x32 grid with a 2 point margin allowing for a maximum of 4px (or 12.5%) `stroke-width`. 4px seems small but it's relative to the 32x32 grid. I tried to place as few points as possible to keep the shapes simple but also to reduce on file size. All icons measure in at a total of 9KB minified (2KB in SVGZ).
 
 <div class="align-center p2">
     <svg viewBox="0 0 32 32" width="128" height="128" fill="none">
@@ -34,7 +35,7 @@ I ended up creating 75+ line icons using strictly `stroke` to define the shape. 
 {% endhighlight %}
 
 
-<h4 class="pt6"><strong>There are a few caveats</strong></h4>
+#### **There are a few caveats**
 
 One of the bigger caveats is the antialiasing, especially for screens without subpixels. If you want to pixel-hint as much as possible, I recommend using `stroke-width` increments of 0.5px or 1.5625%. Regardless of what size you set the `stroke-width`, I recommend using `overflow: visible` incase the linecap edge falls just outside the `viewBox`.
 

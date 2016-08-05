@@ -18,7 +18,11 @@ layout: default
       </div>
 
       {% if page.hero-image %}
-      <div class="width-full center-block slidefade" style="height: 80vw; max-height: 435px; {% if page.hero-maxwidth %}max-width: {{ page.hero-maxwidth }};{% endif %} background-image: url({{ page.hero-image }}); background-size: auto 100%; background-position: {{ page.hero-position }} bottom; background-repeat: {{ page.hero-repeat }}">
+      <div class="width-full center-block slidefade" style="height: 80vw; max-height: 435px; background-size: auto 100%;
+        {% if page.hero-maxwidth %} max-width: {{ page.hero-maxwidth }}; {% endif %}
+        {% if page.hero-image %} background-image: url({{ page.hero-image }}); {% endif %}
+        {% if page.hero-position %} background-position: {{ page.hero-position }} bottom; {% else %} background-position: center bottom; {% endif %}
+        {% if page.hero-repeat %} background-repeat: {{ page.hero-repeat }}; {% else %} background-repeat: no-repeat; {% endif %} ">
       </div>
       {% endif %}
 
