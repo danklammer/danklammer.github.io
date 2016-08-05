@@ -20,7 +20,7 @@ I ended up creating my own with this simple solution. Using javascript `setInter
 
 In the CSS, I set all the items in the list to be stacked on top of each other using `position: absolute`. Then I set `opacity: 0` to all items, except the first-child and last-child. So the top and bottom items are the only two items visible. I also set the first-child (or top item) to have a slightly higher `z-index`, so they are now stacked in order. As soon as the top item is moved to the bottom, it loses it's priority `z-index` but is still visible (just underneath), and the 2nd item is then moved to the top, acquiring the new styles of having `opacity: 1` and the higher `z-index`. We now have a working slide show.
 
-Simply add a CSS transition to the opacity and the 2nd items in the list will now fade on top of the previous top item.
+Simply add `transition: opacity 1s ease` to the first-child and the 2nd items in the list will now fade on top of the previous top (now bottom) item.
 
 
 #### **Demo:**
@@ -95,13 +95,13 @@ li {
   opacity: 0;
 }
 
-li:first-child {
-  z-index: 2
-}
-
 li:first-child,
 li:last-child {
- opacity: 1;
- transition: opacity 1s ease;
+  opacity: 1;
+}
+
+li:first-child {
+  z-index: 2;
+  transition: opacity 1s ease;
 }
 {% endhighlight %}
