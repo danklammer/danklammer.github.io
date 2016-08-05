@@ -34,6 +34,13 @@
     <style>
       .post-content a, .color-page { color: rgb({{ page.color }}) }
       .post-content a.btn, .bg-page { color: #fff; background: rgb({{ page.color }}) }
+
+      /* CSS loaded only when requested via modeulecss args */
+      {% if page.modulecss %}
+          {% for css in page.modulecss %}
+              {% include {{ css }} %}
+          {% endfor %}
+      {% endif %}
     </style>
   {% endif %}
 
