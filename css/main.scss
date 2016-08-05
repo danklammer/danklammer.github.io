@@ -49,6 +49,8 @@ a { color: #3498db }
 .post-content h2,
 .post-content h3,
 .post-content h4,
+.post-content h5,
+.post-content h6,
 .highlight {
     max-width: $sm-breakpoint;
     padding-left: $article-side-padding;
@@ -60,14 +62,18 @@ a { color: #3498db }
 .post-content h1:first-child,
 .post-content h2:first-child,
 .post-content h3:first-child,
-.post-content h4:first-child {
+.post-content h4:first-child,
+.post-content h5:first-child,
+.post-content h6:first-child {
     margin-top: 1.25rem;
 }
 
-.post-content p + h1,
-.post-content p + h2,
-.post-content p + h3,
-.post-content p + h4 {
+.post-content * + h1,
+.post-content * + h2,
+.post-content * + h3,
+.post-content * + h4,
+.post-content * + h5,
+.post-content * + h6 {
     margin-top: 2.25rem;
 }
 
@@ -169,6 +175,8 @@ hr {
 
 // Code Highlight
 .highlight {
+    margin-top: 0.75rem;
+    margin-bottom: 0.75rem;
     font-size: small;
     padding: .125rem 1.25rem;
     border-radius: .25rem;
