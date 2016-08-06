@@ -5,9 +5,11 @@
       {% include icons/icon-logo.svg width="64" height="64" stroke-width="3%" class="color-blue" %}
     </a>
     
+    {% if page.url == '/' %}<h1>{% endif %}
     <a class="center-block color-white font-size-1 font-weight-4 line-height-title lowercase underline-none" href="{{ site.baseurl }}/">
     {{ site.title }}
     </a>
+    {% if page.url == '/' %}</h1>{% endif %}
 
     <span class="center-block font-size-7 uppercase tracking-super opacity-5">
       Designer &amp; Developer
