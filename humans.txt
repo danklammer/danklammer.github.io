@@ -1,0 +1,19 @@
+# danklammer.com
+# This is the man in charge.
+
+# TEAM
+
+    Dan Klammer -- Web Designer & Developer -- @danklammer
+
+# THANKS
+
+    Special thanks to my Mom! Hi, Mom! *Waves*
+
+# TECHNOLOGY COLOPHON
+
+    Built with Jekyll
+    Hosted on GitHub Pages
+    Styled with Tinyset
+    Iconified with Bytesize Icons
+    Crammed with Jekyll Compress
+    Image squeezed with ImageOptim
