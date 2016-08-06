@@ -4,7 +4,7 @@ title:          "Create Small"
 subtitle:       "Tackling big design problems with little space"
 date:           2014-02-08
 author:         Dan Klammer
-color:          "40, 43, 49"
+color:          "84, 69, 47"
 color-alpha:    "0.8"
 hero-image:     /img/articles/2014-02-08-create-small/create-small-hero.jpg
 permalink:      /articles/create-small/
