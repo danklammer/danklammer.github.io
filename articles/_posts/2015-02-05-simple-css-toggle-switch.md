@@ -16,6 +16,8 @@ I recently discovered that by adding `appearance: none` to Form Elements, that i
 
 I was able to turn a checkbox into a nice little toggle switch.
 
+ *Update: Pseudo classes are only enabled on webkit browsers.*
+
 #### **Check it out:**
 
 <div class="align-center p2"><input class="toggle" type="checkbox" /></div>
