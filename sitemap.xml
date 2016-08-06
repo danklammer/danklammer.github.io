@@ -8,7 +8,11 @@ sitemap_exclude: y
     {% for post in site.posts %}
     <url>
         <loc>{{site.production_url}}{{ post.url | remove: 'index.html' }}</loc>
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+        {% if post.lastmod %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% else %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% endif %}
     </url>
     {% endfor %}
 
@@ -16,8 +20,14 @@ sitemap_exclude: y
     {% if page.sitemap_exclude != 'y' %}
     <url>
         <loc>{{site.production_url}}{{ page.url | remove: 'index.html' }}</loc>
-        <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+        {% if post.lastmod %}
+        <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
+        {% else %}
+        <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+        {% endif %}
     </url>
     {% endif %}
     {% endfor %}
 </urlset>
+
+
