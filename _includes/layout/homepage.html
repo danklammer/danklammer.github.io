@@ -18,7 +18,7 @@
             </div>
 
             {% if post.cover-image %}
-            <img src="{{ post.cover-image }}" width="450" height="400" class="project-img fade block width-full no-select" alt="{{ post.title }}" onload="this.classList.remove('hold-fade')" />
+            <img src="{{ post.cover-image }}" width="450" height="400" class="project-img fade block width-full no-select" alt="{{ post.title }}" onload="this.classList.remove('hold-fade')" style="transition-delay: {{ forloop.index | times:150 }}ms" />
             {% endif %}
 
           </a>
