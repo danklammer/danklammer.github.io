@@ -124,6 +124,15 @@ hr {
     animation: slideFade 1s ease-out 1 forwards;
 }
 
+.fade {
+    opacity: 1;
+    transition: opacity 1s ease;
+}
+
+.hold-fade {
+    opacity: 0 !important;
+}
+
 
 // Navigation
 .navlink-off, .navlink-on { position: relative }

@@ -18,7 +18,7 @@
             </div>
 
             {% if post.cover-image %}
-            <img src="{{ post.cover-image }}" width="450" height="400" class="project-img block width-full no-select" alt="{{ post.title }}" />
+            <img src="{{ post.cover-image }}" width="450" height="400" class="project-img fade block width-full no-select" alt="{{ post.title }}" onload="this.classList.remove('hold-fade')" />
             {% endif %}
 
           </a>
@@ -33,6 +33,15 @@
 </div>
 
 <script>
+  [].forEach.call(
+    document.querySelectorAll(".project-img"), 
+      function(e){
+        if(!e.complete){
+          e.classList.add("hold-fade");
+        }
+      }
+  );
+
   sessionStorage.setItem("via", "home");
   {% include layout/scripts.js %}
 </script>
