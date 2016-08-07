@@ -309,4 +309,8 @@ hr {
         width: 35%;
     }
 
+    .project-img {
+        min-height: calc((32.5vw - 1.5rem) * 1/1.125);
+    }
+
 }
