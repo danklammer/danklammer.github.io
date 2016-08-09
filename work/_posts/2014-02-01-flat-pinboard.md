@@ -2,6 +2,7 @@
 layout:         project
 title:          "Flat Pinboard"
 subtitle:       "Simple Pinboard userstyle"
+description:    "I signed up for Pinboard.in, the anti-social bookmarking site, to get away from all the social linking out there. I wanted a simple but flexible solution to..."
 year:           2014
 role:           Creator
 color:          "27, 149, 228"
