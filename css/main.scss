@@ -124,12 +124,12 @@ hr {
     animation: slideFade 1s ease-out 1 forwards;
 }
 
-.fade {
+[data-imgload="done"] {
     opacity: 1;
     transition: opacity 1s ease;
 }
 
-.hold-fade {
+[data-imgload="queuefade"] {
     opacity: 0 !important;
 }
 
