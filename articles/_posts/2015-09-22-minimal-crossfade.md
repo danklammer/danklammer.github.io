@@ -12,6 +12,10 @@ modulecss:
     - modules/crossfade-demo.css
 modulejs:
     - modules/crossfade-demo.js
+sitemap:
+  lastmod: 2016-08-08
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 I recently needed to crossfade images, showcasing app screens for a project. I looked around online for an ideal solution, and everything I found was way overkill or bloat. I just needed to smoothly faded a series of images into each other. That's it!

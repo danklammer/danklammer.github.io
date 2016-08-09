@@ -8,6 +8,10 @@ color:          "84, 69, 47"
 color-alpha:    "0.8"
 hero-image:     /img/articles/2014-02-08-create-small/create-small-hero.jpg
 permalink:      /articles/create-small/
+sitemap:
+  lastmod: 2016-08-08
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 I find the hardest aspects of design are (1) getting started and (2) keeping it simple—both very important and actually related in my mind. To overcome these challenges and to jumpstart my design process, I simply *create small*.

@@ -10,6 +10,10 @@ hero-image:     /img/articles/2015-02-05-simple-css-toggle-switch/simple-css-tog
 permalink:      /articles/simple-css-toggle-switch/
 modulecss:
     - modules/toggleswitch-demo.css
+sitemap:
+  lastmod: 2016-08-08
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 I recently discovered that by adding `appearance: none` to Form Elements, that it essentially *unlocks* the ability to use `:before` and `:after` styles. Which means you can do more with just a plain old input field without any supplemental HTML.

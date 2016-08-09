@@ -12,6 +12,10 @@ modulecss:
     - modules/bytesize-demo.css
 modulejs:
     - modules/bytesize-demo.js
+sitemap:
+  lastmod: 2016-08-08
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 In the last year or so, I took on a project to [learn the intricacies of SVG], more specifically SVG `paths` and hand-coding them. I was inspired by the idea when I saw [Brent Jackson]'s [Geomicons], a minimal iconset built from the ground up for performance.

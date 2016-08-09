@@ -14,6 +14,10 @@ hero-maxwidth:  800px
 permalink:      /flat-pinboard/
 modulejs:
     - modules/plugin-zoomable.js
+sitemap:
+  lastmod: 2016-08-08
+  priority: 0.7
+  changefreq: 'monthly'
 ---
 
 #### **Friendlier anti-social bookmarking**

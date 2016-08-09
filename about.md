@@ -5,6 +5,10 @@ description: I’m Dan, a web designer living in Cleveland, Ohio. Creating simpl
 permalink: /about/
 modulejs:
     - modules/plugin-loadtime.js
+sitemap:
+  lastmod: 2016-08-08
+  priority: 0.9
+  changefreq: 'monthly'
 ---
 
 ![This is me!](/img/about/dan-klammer.jpg){:id: .br3 }
