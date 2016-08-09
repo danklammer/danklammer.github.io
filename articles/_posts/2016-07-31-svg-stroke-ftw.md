@@ -2,18 +2,18 @@
 layout:         post
 title:          "SVG Stroke FTW!"
 subtitle:       "The flexibility of using SVG stroke for web icons"
-date:           2016-08-04
+date:           2016-07-31
 author:         Dan Klammer
 color:          "77, 87, 114"
 color-alpha:    "0.8"
-hero-image:     /img/articles/2016-08-04-svg-stroke-ftw/svg-stroke-ftw-hero.png
+hero-image:     /img/articles/2016-07-31-svg-stroke-ftw/svg-stroke-ftw-hero.png
 permalink:      /articles/svg-stroke-ftw/
 modulecss:
     - modules/bytesize-demo.css
 modulejs:
     - modules/bytesize-demo.js
 sitemap:
-  lastmod: 2016-08-08
+  lastmod: 2016-08-09
   priority: 0.7
   changefreq: 'monthly'
 ---
