@@ -18,7 +18,7 @@
             </div>
 
             {% if post.cover-image %}
-            <img src="{{ post.cover-image }}" width="450" height="400" class="project-img block width-full no-select" alt="{{ post.title }}" onload="this.setAttribute('data-imgload', 'done')" style="transition-delay: {{ forloop.index | times:150 }}ms" />
+            <img src="{{ post.cover-image }}" width="450" height="400" class="project-img block width-full no-select" alt="{{ post.title }}" style="transition-delay: {{ forloop.index | times:150 }}ms" />
             {% endif %}
 
           </a>
@@ -38,6 +38,9 @@
       function(e){
         if(!e.complete){
           e.setAttribute('data-imgload', 'queuefade');
+        }
+        e.onload = function() {
+          e.setAttribute('data-imgload', 'done');
         }
       }
   );
