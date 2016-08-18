@@ -7,9 +7,11 @@
   <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
   <meta name="author" content="{{ site.title }}">
 
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@danklammer">
   <meta name="twitter:creator" content="@danklammer">
+  <meta name="twitter:title" content="{% if page.title %}{{ page.title | escape }} &mdash; {% if page.subtitle %}{{ page.subtitle }}{% else %}{{ site.title }}{% endif %}{% else %}{{ site.title | escape }} &mdash; {{ site.description }}{% endif %}">
+  <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
 
   <meta property="og:url" content="{{ page.url | prepend: site.url }}">
   <meta property="og:type" content="website">
@@ -19,8 +21,10 @@
 
   {% if page.hero-image %}
     <meta property="og:image" content="{{ page.hero-image | prepend: site.url }}">
+    <meta property="twitter:image" content="{{ page.hero-image | prepend: site.url }}">
   {% else %}
     <meta property="og:image" content="{{ '/img/meta/dk-og.png' | prepend: site.url }}">
+    <meta property="twitter:image" content="{{ '/img/meta/dk-og.png' | prepend: site.url }}">
   {% endif %}
 
   <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
