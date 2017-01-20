@@ -59,6 +59,12 @@ a { color: #3498db }
     margin-right: auto;
 }
 
+.post-content hr {
+    max-width: $sm-breakpoint;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .post-content h1:first-child,
 .post-content h2:first-child,
 .post-content h3:first-child,
@@ -191,12 +197,17 @@ hr {
     border-radius: .25rem;
     border-left: .25rem solid #3498db;
     overflow-x: auto;
-}
+} 
 
 .highlighter-rouge {
     font-size: small;
     padding: 0.25rem;
     border-radius: .1875rem;
+}
+
+.highlight pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
 }
 
 .lg-page .header-tagline { display: none }

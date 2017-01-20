@@ -35,9 +35,10 @@
   <link href="{{ "/favicon.ico" | prepend: site.baseurl }}" rel="shortcut icon" type="image/x-icon">
 
   {% if page.path contains '_posts' or '_drafts' %}
-    <style>
+    <style> 
       .post-content a, .color-page { color: rgb({{ page.color }}) }
       .post-content a.btn, .bg-page { color: #fff; background: rgb({{ page.color }}) }
+      .post-content .highlight { border-color: rgba({{ page.color }}, 0.7) }
 
       /* CSS loaded only when requested via modeulecss args */
       {% if page.modulecss %}

@@ -4,7 +4,8 @@ layout: default
 
 <article class="site-post lg-post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <header class="align-center table width-full color-white text-shadow-medium pt6 pb4 article-side-padding" style="background: linear-gradient( rgba({{ page.color }}, {{ page.color-alpha }}), rgba({{ page.color }}, {{ page.color-alpha }})){% if page.hero-image %}, url({{ page.hero-image }}); background-size: cover; background-position: center center {% endif %}; height: 70vh">
+  <header class="align-center table width-full color-white text-shadow-medium pt6 pb4 article-side-padding" style="background: linear-gradient( rgba({{ page.color }}, {{ page.color-alpha }}), rgba({{ page.color }}, {{ page.color-alpha }}))
+    {% if page.hero-image %}, url({{ page.hero-image }}); background-size: cover; {% if page.hero-position %} background-position: {{ page.hero-position }} center; {% else %} background-position: center center; {% endif %} {% endif %}; height: 70vh">
 
       {% include layout/subpage-logo.html %}
       {% include layout/subpage-close.html %}
