@@ -34,9 +34,9 @@ That's when I discovered [SmartCrop.js], a content-aware image cropping javascri
 
 ## CLI + Automator
 
-The creator of [SmartCrop.js], Jonas Wagner, also wrote a [CLI version] that works hand in hand with ImageMagick, a powerful CLI image editor. These tools give us the flexibility to execute commands from within Automator.
+The creator of [SmartCrop.js], Jonas Wagner, also wrote a [CLI version] that works hand-in-hand with ImageMagick, a powerful CLI image editor. These tools give us the flexibility to execute commands from within Automator.
 
-Automator is an app designed to automate repeative tasks by creating workflows of specific events or actions. We will be creating a Service that can be activated via the context-menu when right-clicking on an image in finder; and then crop and resize that image to our desired dimensions.
+Automator is an app designed to automate repeative tasks by creating workflows of specific events or actions. We'll be creating a Service that can be activated via the context-menu when right-clicking on an image; and then crop/resize that image to our desired dimensions.
 
 
 #### **Nice little service**
@@ -67,7 +67,7 @@ A Service is ideal for this situation since we'll want the able to execute on an
 
 #### **Step 4: Configure your workflow**  
 
-You will need to set up your workflow to only accept image files. Then add the ***Get Selected Finder Items*** and ***Run Shell Script*** actions. Make sure you set the bash script to **Pass input:** ***as arguments***.
+You will need to set up your workflow to only accept image files. Then add the ***Get Selected Finder Items*** and ***Run Shell Script*** actions. Also, make sure you set the bash script to **Pass input:** ***as arguments***.
 
 ![Automator - Run Shell](/img/articles/2017-01-20-smartcrop-js-macos-service/automator-run-shell.png){:id: .zoomable }
 
