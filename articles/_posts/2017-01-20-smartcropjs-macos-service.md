@@ -36,7 +36,7 @@ That's when I discovered [SmartCrop.js], a content-aware image cropping javascri
 
 The creator of [SmartCrop.js], Jonas Wagner, also wrote a [CLI version] that works hand in hand with ImageMagick, a powerful CLI image editor. These tools give us the flexibility to execute commands from within Automator.
 
-Automator is an app designed to automate repeative tasks by creating workflows of specific events. We will be creating a Service that can be activated via the context-menu when right-clicking on an image; and then crops and resizes that image to our desired dimensions.
+Automator is an app designed to automate repeative tasks by creating workflows of specific events or actions. We will be creating a Service that can be activated via the context-menu when right-clicking on an image in finder; and then crop and resize that image to our desired dimensions.
 
 
 #### **Nice little service**
