@@ -23,11 +23,11 @@ img {
     height: auto;
 }
 
-svg {
+svg, video {
     max-width: 100%;
 }
 
-body, nav, main, section, article, aside, header, footer, figure, figcaption, div, form, textarea, input, ul, li, a, img, svg {
+body, nav, main, section, article, aside, header, footer, figure, figcaption, div, form, textarea, input, ul, li, a, img, svg, video {
     box-sizing: inherit
 }
 
