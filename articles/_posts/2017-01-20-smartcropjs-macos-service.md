@@ -41,7 +41,7 @@ Automator is an app designed to automate repeative tasks by creating workflows o
 
 #### **Nice little service**
 
-<p><video src="/img/articles/2017-01-20-smartcrop-js-macos-service/surfer-generate.mp4" autoplay playsinline loop class="zoomable"></video></p>
+<p><video src="/img/articles/2017-01-20-smartcrop-js-macos-service/surfer-generate.mp4" autoplay loop muted webkit-playsinline playsinline class="zoomable"></video></p>
 
 
 #### **Pretty smart crops**
