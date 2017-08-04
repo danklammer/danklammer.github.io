@@ -45,7 +45,9 @@ button, input, select, textarea {
 }
 
 a {
-    background-color: transparent
+    background-color: transparent;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip: ink;
 }
 
 a:active, a:hover, input:focus, select:focus, textarea:focus, button:focus {
