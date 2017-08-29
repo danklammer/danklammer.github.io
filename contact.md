@@ -11,7 +11,7 @@ sitemap:
   changefreq: 'monthly'
 ---
 
-Need help on your next project? Feel free to each out to me on [Twitter] or via the contact form.
+Need help on your next project? Feel free to reach out to me on [Twitter] or via the contact form.
 
 {% include modules/form-contact.html %}
 
