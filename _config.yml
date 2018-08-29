@@ -25,5 +25,5 @@ compress_html:
   blanklines: false
 
 # Jekyll plugins
-gems:
+plugins:
   - jekyll-sitemap
