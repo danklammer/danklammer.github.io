@@ -62,6 +62,6 @@ You do miss out on caching when using these icons inline, but since they have su
 
 [learn the intricacies of SVG]: http://svgpocketguide.com/
 [Brent Jackson]: http://jxnblk.com/
-[Geomicons]: http://geomicons.com/
+[Geomicons]: http://jxnblk.com/geomicons-open/
 [SVG spec]: https://www.w3.org/TR/SVG/
 [CSS-Tricks]: https://css-tricks.com/svg-use-with-external-reference-take-2/
