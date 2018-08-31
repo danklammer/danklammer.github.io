@@ -23,6 +23,11 @@
     stroke-linejoin: round;
 }
 
+#icons.square {
+    stroke-linecap: butt;
+    stroke-linejoin: miter;
+}
+
 .icon-controller {
     max-width: 36rem;
 }
