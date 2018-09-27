@@ -20,7 +20,6 @@ I recently discovered that by adding `appearance: none` to Form Elements, that i
 
 I was able to turn a checkbox into a nice little toggle switch.
 
- *Update: Pseudo classes are only enabled on webkit browsers.*
 
 #### **Check it out:**
 
@@ -39,6 +38,7 @@ I was able to turn a checkbox into a nice little toggle switch.
 {% highlight css %}
 .toggle {
   -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
   width: 62px;
   height: 32px;
