@@ -19,7 +19,7 @@ I’ve been designing and building websites for over fifteen years. I’m passio
 
 More recently, I co-founded a web startup, [Tackk Inc](/tackk), and built web services and apps for millions of users.
 
-Creating simple, well-designed, fast digital products for the world to use makes me happy... Need more info? Grab [my résumé].
+Creating simple, well-designed, fast digital products for the world to use makes me happy... Need more info? Grab [my résumé](/files/danklammer-resume.pdf){:rel="nofollow"}.
 
 
 <h4 class="mt5 pt2 bold">About this website</h4>
@@ -33,7 +33,6 @@ This page loaded for you in {% include modules/plugin-loadtime.html %} seconds. 
  - Crammed with [Jekyll Compress]
  - Image squeezed with [ImageOptim]
 
-[my résumé]: /files/danklammer-resume.pdf
 [Jekyll]: https://jekyllrb.com/
 [GitHub Pages]: https://pages.github.com/
 [Tinyset]: https://github.com/danklammer/tinyset
