@@ -10,7 +10,7 @@ sections:
   create: documents
   match: "**/*"
 - type: directory
-  path: articles
+  path: articles/_posts
   label: Articles
   create: all
   match: "**/*"
