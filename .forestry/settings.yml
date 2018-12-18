@@ -16,7 +16,7 @@ sections:
   match: "**/*"
 - type: jekyll-pages
   label: Pages
-  create: documents
+  create: none
 - type: jekyll-posts
   label: Posts
   create: all
