@@ -21,8 +21,8 @@ sections:
   match: "**/*"
 upload_dir: img
 public_path: "/img"
-front_matter_path: ''
-use_front_matter_path: false
+front_matter_path: "/test"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   output_directory: _site
