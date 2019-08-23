@@ -20,5 +20,5 @@ What I mean by *creating small* is actually an odd procedure—instead of starti
 
 As a designer for [Tackk], it’s very easy to want to keep adding more robust functionality (or micro-features) because of how universal the tool is, but *creating small* keeps me focused on what matters.
 
-[Scout Books DIY Dot Grid Notebook]: http://shop.scoutbooks.com/product/diy-notebook/
+[Scout Books DIY Dot Grid Notebook]: https://scoutbooks.com/shop/10-pack-blank-kraft-notebooks/
 [Tackk]: /tackk
