@@ -11,7 +11,7 @@ sitemap:
   changefreq: 'monthly'
 ---
 
-![This is me!](/img/about/dan-klammer.jpg){:id: .br3 }
+<img src="/img/about/dan-klammer.jpg" alt="This is me!" class="br3" width="536" height="325" />
 
 ### **I’m Dan, a web designer living in Cleveland, Ohio.**
 
